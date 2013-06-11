@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.github.com/Arkitektum/GIS.Lib.MetadataCSW/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Arkitektum/GIS.Lib.MetadataCSW</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release of the library.</releaseNotes>
+    <copyright>Copyright 2013 Arkitektum AS</copyright>
+    <tags>GIS OpenGIS ISO19139 OGC CSW GML</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Xml" />
+    </frameworkAssemblies>
+  </metadata>
+  <files /> <!-- This trick avoids any content to be included - only the dll file-->  
+</package>
