@@ -1,0 +1,171 @@
+﻿#Modifications to the code file that have been done after generating code with xsd.exe
+
+
+#
+public partial class GenericName_PropertyType {
+        
+        private CodeType abstractGenericNameField;
+        
+        private string nilReasonField;
+        
+        /// <remarks/>
+        public CodeType AbstractGenericName {
+            get {
+                return this.abstractGenericNameField;
+            }
+            set {
+                this.abstractGenericNameField = value;
+            }
+        }
+    
+Replace code above with:
+
+	public partial class GenericName_PropertyType {
+    
+    private CodeType itemField;
+    
+    private GenericNameItemChoiceType itemElementNameField;
+    
+    private string nilReasonField;
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlElementAttribute("LocalName", typeof(CodeType))]
+    [System.Xml.Serialization.XmlElementAttribute("ScopedName", typeof(CodeType))]
+    [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemElementName")]
+    public CodeType Item {
+        get {
+            return this.itemField;
+        }
+        set {
+            this.itemField = value;
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public GenericNameItemChoiceType ItemElementName {
+        get {
+            return this.itemElementNameField;
+        }
+        set {
+            this.itemElementNameField = value;
+        }
+    }
+    
+And append following enum:
+
+[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+[System.SerializableAttribute()]
+[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.isotc211.org/2005/gco", IncludeInSchema=false)]
+public enum GenericNameItemChoiceType {
+    
+    /// <remarks/>
+    LocalName,
+    
+    /// <remarks/>
+    ScopedName,
+}
+
+
+#
+	public partial class MD_Identifier_PropertyType {
+        
+        [XmlElement("RS_Identifier", typeof(RS_Identifier_Type))]
+        [XmlElement("MD_Identifier", typeof(MD_Identifier_Type))]
+        public MD_Identifier_Type MD_Identifier {
+
+
+#
+	public partial class MD_ContentInformation_PropertyType {
+	
+		[XmlElement(Type = typeof(MD_FeatureCatalogueDescription_Type), ElementName = "MD_FeatureCatalogueDescription", Namespace = "http://www.isotc211.org/2005/gmd")]
+		[XmlElement(Type = typeof(MD_CoverageDescription_Type), ElementName = "MD_CoverageDescription", Namespace = "http://www.isotc211.org/2005/gmd")]
+		public AbstractMD_ContentInformation_Type AbstractMD_ContentInformation {
+
+#
+    public partial class UpdateType {
+        
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
+        [System.Xml.Serialization.XmlElementAttribute("Constraint", typeof(QueryConstraintType))]
+        [System.Xml.Serialization.XmlElementAttribute("RecordProperty", typeof(RecordPropertyType))]
+        public object[] Items {
+
+#
+	public partial class GetRecordByIdResponseType {
+       
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
+        [System.Xml.Serialization.XmlElementAttribute("AbstractRecord", typeof(AbstractRecordType))]
+        [System.Xml.Serialization.XmlElementAttribute("BriefRecord", typeof(BriefRecordType))]
+        [System.Xml.Serialization.XmlElementAttribute("DCMIRecord", typeof(DCMIRecordType))]
+        [System.Xml.Serialization.XmlElementAttribute("Record", typeof(RecordType))]
+        [System.Xml.Serialization.XmlElementAttribute("SummaryRecord", typeof(SummaryRecordType))]
+        public object[] Items {
+		
+#
+	public partial class MD_Identification_PropertyType {
+
+		[XmlElement(Type = typeof(SV_ServiceIdentification_Type), ElementName = "SV_ServiceIdentification", Namespace = "http://www.isotc211.org/2005/srv")]
+		[XmlElement(Type = typeof(MD_ServiceIdentification_Type), ElementName="MD_ServiceIdentification", Namespace = "http://www.isotc211.org/2005/gmd")]
+		[XmlElement(Type = typeof(MD_DataIdentification_Type), ElementName = "MD_DataIdentification", Namespace = "http://www.isotc211.org/2005/gmd")]
+		public AbstractMD_Identification_Type AbstractMD_Identification {
+
+#
+	public partial class MD_Constraints_PropertyType {
+
+        [XmlElement(typeof(MD_Constraints_Type), ElementName = "MD_Constraints")]
+        [XmlElement(typeof(MD_LegalConstraints_Type), ElementName = "MD_LegalConstraints")]
+        [XmlElement(typeof(MD_SecurityConstraints_Type), ElementName = "MD_SecurityConstraints")]
+        public MD_Constraints_Type MD_Constraints {
+
+#
+	public partial class EX_GeographicExtent_PropertyType {
+    
+        [XmlElement(typeof(EX_GeographicDescription_Type), ElementName = "EX_GeographicDescription")]
+        [XmlElement(typeof(EX_GeographicBoundingBox_Type), ElementName = "EX_GeographicBoundingBox")]
+        [XmlElement(typeof(EX_BoundingPolygon_Type), ElementName = "EX_BoundingPolygon")]
+        public AbstractEX_GeographicExtent_Type AbstractEX_GeographicExtent {
+
+#
+    public partial class DQ_Element_PropertyType {
+        
+        [XmlElement(typeof(AbstractDQ_Completeness_Type), ElementName = "AbstractDQ_Completeness")]
+        [XmlElement(typeof(DQ_CompletenessCommission_Type), ElementName = "DQ_CompletenessCommission")]
+        [XmlElement(typeof(DQ_CompletenessOmission_Type), ElementName = "DQ_CompletenessOmission")]
+        [XmlElement(typeof(AbstractDQ_LogicalConsistency_Type), ElementName = "AbstractDQ_LogicalConsistency")]
+        [XmlElement(typeof(DQ_ConceptualConsistency_Type), ElementName = "DQ_ConceptualConsistency")]
+        [XmlElement(typeof(DQ_DomainConsistency_Type), ElementName = "DQ_DomainConsistency")]
+        [XmlElement(typeof(DQ_FormatConsistency_Type), ElementName = "DQ_FormatConsistency")]
+        [XmlElement(typeof(DQ_TopologicalConsistency_Type), ElementName = "(DQ_TopologicalConsistency")]
+        [XmlElement(typeof(AbstractDQ_PositionalAccuracy_Type), ElementName = "AbstractDQ_PositionalAccuracy")]
+        [XmlElement(typeof(DQ_AbsoluteExternalPositionalAccuracy_Type), ElementName = "DQ_AbsoluteExternalPositionalAccuracy")]
+        [XmlElement(typeof(DQ_GriddedDataPositionalAccuracy_Type), ElementName = "DQ_GriddedDataPositionalAccuracy")]
+        [XmlElement(typeof(DQ_RelativeInternalPositionalAccuracy_Type), ElementName = "DQ_RelativeInternalPositionalAccuracy")]
+        [XmlElement(typeof(AbstractDQ_ThematicAccuracy_Type), ElementName = "AbstractDQ_ThematicAccuracy")]
+        [XmlElement(typeof(DQ_ThematicClassificationCorrectness_Type), ElementName = "DQ_ThematicClassificationCorrectness")]
+        [XmlElement(typeof(DQ_NonQuantitativeAttributeAccuracy_Type), ElementName = "DQ_NonQuantitativeAttributeAccuracy")]
+        [XmlElement(typeof(DQ_QuantitativeAttributeAccuracy_Type), ElementName = "DQ_QuantitativeAttributeAccuracy")]
+        [XmlElement(typeof(AbstractDQ_TemporalAccuracy_Type), ElementName = "AbstractDQ_TemporalAccuracy")]
+        [XmlElement(typeof(DQ_AccuracyOfATimeMeasurement_Type), ElementName = "DQ_AccuracyOfATimeMeasurement")]
+        [XmlElement(typeof(DQ_TemporalConsistency_Type), ElementName = "DQ_TemporalConsistency")]
+        [XmlElement(typeof(DQ_TemporalValidity_Type), ElementName = "DQ_TemporalValidity")]
+        public AbstractDQ_Element_Type AbstractDQ_Element {
+
+#
+    public partial class DQ_Result_PropertyType {
+        
+        [XmlElement(typeof(DQ_QuantitativeResult_Type), ElementName = "DQ_QuantitativeResult")]
+        [XmlElement(typeof(DQ_ConformanceResult_Type), ElementName = "DQ_ConformanceResult")]
+        public AbstractDQ_Result_Type AbstractDQ_Result {
+
+
+#
+    public partial class TM_Primitive_PropertyType {
+        
+		[XmlElement(typeof(TimeEdgeType), ElementName = "TimeEdge", Namespace = "http://www.opengis.net/gml/3.2")]
+        [XmlElement(typeof(TimeNodeType), ElementName = "TimeNode", Namespace = "http://www.opengis.net/gml/3.2")]
+        [XmlElement(typeof(TimePeriodType), ElementName = "TimePeriod", Namespace = "http://www.opengis.net/gml/3.2")]
+        [XmlElement(typeof(TimeInstantType), ElementName = "TimeInstant", Namespace = "http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        public AbstractTimePrimitiveType AbstractTimePrimitive {
