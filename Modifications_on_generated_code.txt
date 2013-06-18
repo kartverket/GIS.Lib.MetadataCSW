@@ -2,6 +2,27 @@
 
 
 #
+Change LiteralType from a confused version of string[] and XmlAnyElement, to be a string[]. XSD states that it should be a text element. 
+
+public partial class LiteralType : ExpressionType {
+        
+        private string[] textField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string[] Text {
+            get {
+                return this.textField;
+            }
+            set {
+                this.textField = value;
+            }
+        }
+    }
+
+
+
+#
 public partial class GenericName_PropertyType {
         
         private CodeType abstractGenericNameField;

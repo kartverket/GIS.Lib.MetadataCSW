@@ -1699,17 +1699,16 @@ namespace www.opengis.net {
     [System.Xml.Serialization.XmlRootAttribute("Literal", Namespace="http://www.opengis.net/ogc", IsNullable=false)]
     public partial class LiteralType : ExpressionType {
         
-        private System.Xml.XmlNode[] anyField;
+        private string[] textField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlTextAttribute()]
-        [System.Xml.Serialization.XmlAnyElementAttribute()]
-        public System.Xml.XmlNode[] Any {
+        public string[] Text {
             get {
-                return this.anyField;
+                return this.textField;
             }
             set {
-                this.anyField = value;
+                this.textField = value;
             }
         }
     }
