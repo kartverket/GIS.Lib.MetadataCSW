@@ -1,6 +1,56 @@
 ﻿#Modifications to the code file that have been done after generating code with xsd.exe
 
 
+# Add support for dc:URI element in DCMIRecordType
+
+In class:
+
+		public partial class DCMIRecordType : AbstractRecordType {
+
+Add this attribute:
+
+        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
+        public SimpleLiteral[] Items {
+
+In enum:
+
+		public enum ItemsChoiceType24 {
+
+Add this attribute:
+			
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("http://purl.org/dc/elements/1.1/:URI")]
+        URI,
+
+
+# Fix funky version of xml-any element for InsertType
+public partial class InsertType {
+
+        private object[] itemsField;
+        
+        private string typeNameField;
+        
+        private string handleField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
+        [System.Xml.Serialization.XmlElementAttribute("Constraint", typeof(QueryConstraintType))]
+        [System.Xml.Serialization.XmlElementAttribute("RecordProperty", typeof(RecordPropertyType))]
+        public object[] Items
+        {
+            get
+            {
+                return this.itemsField;
+            }
+            set
+            {
+                this.itemsField = value;
+            }
+        }
+
+
 #
 Change LiteralType from a confused version of string[] and XmlAnyElement, to be a string[]. XSD states that it should be a text element. 
 

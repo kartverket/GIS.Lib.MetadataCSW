@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/Arkitektum/GIS.Lib.MetadataCSW</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial release of the library.</releaseNotes>
+    <releaseNotes>Add experimental support for dc:URI element in search responses.</releaseNotes>
     <copyright>Copyright 2013 Arkitektum AS</copyright>
     <tags>GIS OpenGIS ISO19139 OGC CSW GML</tags>
     <frameworkAssemblies>

@@ -728,6 +728,7 @@ namespace www.opengis.net {
         [System.Xml.Serialization.XmlElementAttribute("subject", typeof(SimpleLiteral), Namespace="http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlElementAttribute("title", typeof(SimpleLiteral), Namespace="http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlElementAttribute("type", typeof(SimpleLiteral), Namespace="http://purl.org/dc/elements/1.1/")]
+        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public SimpleLiteral[] Items {
             get {
@@ -820,6 +821,11 @@ namespace www.opengis.net {
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("http://purl.org/dc/elements/1.1/:type")]
         type,
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlEnumAttribute("http://purl.org/dc/elements/1.1/:URI")]
+        URI,
+
     }
     
     /// <remarks/>
@@ -6928,24 +6934,30 @@ namespace www.opengis.net {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/cat/csw/2.0.2")]
     public partial class InsertType {
+
+        private object[] itemsField;
         
-        private System.Xml.XmlElement[] anyField;
-        
-        private string typeNameField;
+//        private string typeNameField;
         
         private string handleField;
-        
+
         /// <remarks/>
         [System.Xml.Serialization.XmlAnyElementAttribute()]
-        public System.Xml.XmlElement[] Any {
-            get {
-                return this.anyField;
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
+        [System.Xml.Serialization.XmlElementAttribute("Constraint", typeof(QueryConstraintType))]
+        [System.Xml.Serialization.XmlElementAttribute("RecordProperty", typeof(RecordPropertyType))]
+        public object[] Items
+        {
+            get
+            {
+                return this.itemsField;
             }
-            set {
-                this.anyField = value;
+            set
+            {
+                this.itemsField = value;
             }
         }
-        
+        /*
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
         public string typeName {
@@ -6955,7 +6967,7 @@ namespace www.opengis.net {
             set {
                 this.typeNameField = value;
             }
-        }
+        }*/
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute(DataType="ID")]
