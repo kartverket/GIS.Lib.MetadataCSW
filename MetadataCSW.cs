@@ -1128,6 +1128,7 @@ namespace www.opengis.net {
         [System.Xml.Serialization.XmlElementAttribute("AbstractRecord", typeof(AbstractRecordType))]
         [System.Xml.Serialization.XmlElementAttribute("BriefRecord", typeof(BriefRecordType))]
         [System.Xml.Serialization.XmlElementAttribute("DCMIRecord", typeof(DCMIRecordType))]
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
         [System.Xml.Serialization.XmlElementAttribute("Record", typeof(RecordType))]
         [System.Xml.Serialization.XmlElementAttribute("SummaryRecord", typeof(SummaryRecordType))]
         public object[] Items {

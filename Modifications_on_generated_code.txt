@@ -1,6 +1,16 @@
 ﻿#Modifications to the code file that have been done after generating code with xsd.exe
 
 
+# add MD_Metadata_Type to SearchResultsType
+
+
+    public partial class SearchResultsType {
+
+        [System.Xml.Serialization.XmlElementAttribute("MD_Metadata", typeof(MD_Metadata_Type), Namespace = "http://www.isotc211.org/2005/gmd")]
+        public object[] Items {
+
+
+
 # Add support for dc:URI element in DCMIRecordType
 
 In class:

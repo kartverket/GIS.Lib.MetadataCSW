@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/Arkitektum/GIS.Lib.MetadataCSW</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Add experimental support for dc:URI element in search responses.</releaseNotes>
-    <copyright>Copyright 2013 Arkitektum AS</copyright>
+    <releaseNotes>1.4 - Add support for MD_Metadata in SearchResultsType. 1.3 - Add experimental support for dc:URI element in search responses.</releaseNotes>
+    <copyright>Copyright 2013-2014 Arkitektum AS</copyright>
     <tags>GIS OpenGIS ISO19139 OGC CSW GML</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Xml" />
