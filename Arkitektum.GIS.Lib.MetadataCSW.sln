@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkitektum.GIS.Lib.MetadataCSW", "Arkitektum.GIS.Lib.MetadataCSW.csproj", "{2B3EF2ED-5CBA-4AEE-A2DB-3F276AA36D2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A5518355-ECBD-4CB6-A373-BF8CC2DF2E0A}"
@@ -9,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A55183
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkitektum.GIS.Lib.MetadataCSW.Test", "..\Arkitektum.GIS.Lib.MetadataCSW.Test\Arkitektum.GIS.Lib.MetadataCSW.Test.csproj", "{B5999B4C-79CF-4B03-99D3-15C20FBE6095}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,6 @@ Global
 		{2B3EF2ED-5CBA-4AEE-A2DB-3F276AA36D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B3EF2ED-5CBA-4AEE-A2DB-3F276AA36D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B3EF2ED-5CBA-4AEE-A2DB-3F276AA36D2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5999B4C-79CF-4B03-99D3-15C20FBE6095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5999B4C-79CF-4B03-99D3-15C20FBE6095}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5999B4C-79CF-4B03-99D3-15C20FBE6095}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5999B4C-79CF-4B03-99D3-15C20FBE6095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
