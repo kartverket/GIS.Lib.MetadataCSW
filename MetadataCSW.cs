@@ -17108,8 +17108,8 @@ namespace www.opengis.net {
         private MD_RestrictionCode_PropertyType[] accessConstraintsField;
         
         private MD_RestrictionCode_PropertyType[] useConstraintsField;
-        
-        private CharacterString_PropertyType[] otherConstraintsField;
+
+        private MD_RestrictionOther_PropertyType[] otherConstraintsField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("accessConstraints")]
@@ -17135,7 +17135,8 @@ namespace www.opengis.net {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("otherConstraints")]
-        public CharacterString_PropertyType[] otherConstraints {
+        public MD_RestrictionOther_PropertyType[] otherConstraints
+        {
             get {
                 return this.otherConstraintsField;
             }
@@ -41365,4 +41366,161 @@ namespace www.opengis.net {
             }
         }
     }
+
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmx")]
+    [System.Xml.Serialization.XmlRootAttribute("Anchor", Namespace = "http://www.isotc211.org/2005/gmx", IsNullable = false)]
+    public partial class Anchor_Type
+    {
+
+        private string typeField;
+
+        private string hrefField;
+
+        private string valueField;
+
+        public Anchor_Type()
+        {
+            this.typeField = "simple";
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
+        public string type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
+            }
+        }
+
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+            }
+        }
+    }
+
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+
+
+    public partial class MD_RestrictionOther_PropertyType : IXmlSerializable
+    {
+
+        private object mD_RestrictionOtherField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object MD_RestrictionOther
+        {
+            get
+            {
+                return this.mD_RestrictionOtherField;
+            }
+            set
+            {
+                this.mD_RestrictionOtherField = value;
+            }
+        }
+
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+
+            reader.Read();
+
+            if (reader.LocalName == "CharacterString")
+            {
+                string charStr = reader.ReadElementString("CharacterString", "http://www.isotc211.org/2005/gco");
+                reader.Read();
+
+                MD_RestrictionOther = new CharacterString_PropertyType { CharacterString = charStr };
+
+            }
+            else
+            {
+
+                string anchorLink = reader.GetAttribute("xlink:href");
+                reader.Read();
+                string anchorText = reader.Value;
+
+                reader.Read();
+                reader.Read();
+                reader.Read();
+
+                MD_RestrictionOther = new Anchor_Type { Value = anchorText, href = anchorLink };
+
+            }
+
+
+
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+
+            if (this.mD_RestrictionOtherField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.mD_RestrictionOtherField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.mD_RestrictionOtherField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type otherAnchor = this.mD_RestrictionOtherField as Anchor_Type;
+                if (otherAnchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", otherAnchor.href);
+                    writer.WriteString(otherAnchor.Value);
+                    writer.WriteEndElement();
+                }
+            }
+
+        }
+    }
+
+
 }
