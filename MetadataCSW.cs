@@ -20,8 +20,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("description", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("description", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class StringOrRefType {
         
         private string nilReasonField;
@@ -11468,8 +11468,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("measure", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("measure", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MeasureType {
         
         private string uomField;
@@ -11504,7 +11504,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class SpeedType : MeasureType {
     }
     
@@ -11513,7 +11513,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class VolumeType : MeasureType {
     }
     
@@ -11522,7 +11522,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class AreaType : MeasureType {
     }
     
@@ -11531,7 +11531,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class GridLengthType : MeasureType {
     }
     
@@ -11540,7 +11540,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeType : MeasureType {
     }
     
@@ -11549,7 +11549,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     [System.Xml.Serialization.XmlRootAttribute("Scale", Namespace="http://www.isotc211.org/2005/gco", IsNullable=false)]
     public partial class ScaleType : MeasureType {
     }
@@ -11559,7 +11559,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     [System.Xml.Serialization.XmlRootAttribute("Length", Namespace="http://www.isotc211.org/2005/gco", IsNullable=false)]
     public partial class LengthType : MeasureType {
     }
@@ -11709,7 +11709,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public PointType Point {
             get {
                 return this.pointField;
@@ -11747,8 +11747,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Point", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Point", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PointType : AbstractGeometricPrimitiveType {
         
         private object itemField;
@@ -11771,8 +11771,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("tupleList", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("tupleList", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoordinatesType {
         
         private string decimalField;
@@ -11843,8 +11843,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("pos", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("pos", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectPositionType {
         
         private string srsNameField;
@@ -11907,7 +11907,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeometricPrimitiveType : AbstractGeometryType {
     }
     
@@ -11941,7 +11941,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeometryType : AbstractGMLType {
         
         private string srsNameField;
@@ -12103,7 +12103,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGMLType {
         
         private MetaDataPropertyType[] metaDataPropertyField;
@@ -12187,8 +12187,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("metaDataProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("metaDataProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MetaDataPropertyType {
         
         private AbstractMetaDataType abstractMetaDataField;
@@ -12249,7 +12249,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractMetaDataType {
         
         private string[] textField;
@@ -12284,8 +12284,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("descriptionReference", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("descriptionReference", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ReferenceType {
         
         private bool ownsField;
@@ -12338,8 +12338,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("identifier", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("identifier", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CodeWithAuthorityType : CodeType {
     }
     
@@ -12349,8 +12349,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("name", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("name", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CodeType {
         
         private string codeSpaceField;
@@ -12395,7 +12395,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTopologyType : AbstractGMLType {
     }
     
@@ -12408,7 +12408,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTopoPrimitiveType : AbstractTopologyType {
     }
     
@@ -12418,7 +12418,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimeSliceType : AbstractGMLType {
         
         private TimePrimitivePropertyType validTimeField;
@@ -12452,8 +12452,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("validTime", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("validTime", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimePrimitivePropertyType {
         
         private AbstractTimePrimitiveType abstractTimePrimitiveField;
@@ -12524,7 +12524,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimePrimitiveType : AbstractTimeObjectType {
         
         private RelatedTimeType[] relatedTimeField;
@@ -12546,7 +12546,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class RelatedTimeType : TimePrimitivePropertyType {
         
         private RelatedTimeTypeRelativePosition relativePositionField;
@@ -12579,7 +12579,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
     public enum RelatedTimeTypeRelativePosition {
         
         /// <remarks/>
@@ -12636,7 +12636,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimeObjectType : AbstractGMLType {
     }
     
@@ -12646,7 +12646,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimeComplexType : AbstractTimeObjectType {
     }
     
@@ -12657,7 +12657,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimeTopologyPrimitiveType : AbstractTimePrimitiveType {
         
         private ReferenceType complexField;
@@ -12680,7 +12680,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractTimeGeometricPrimitiveType : AbstractTimePrimitiveType {
         
         private string frameField;
@@ -12718,7 +12718,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractFeatureType : AbstractGMLType {
         
         private BoundingShapeType boundedByField;
@@ -12752,8 +12752,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("boundedBy", Namespace="http://www.opengis.net/gml/3.2", IsNullable=true)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("boundedBy", Namespace="http://www.opengis.net/gml", IsNullable=true)]
     public partial class BoundingShapeType {
         
         private object itemField;
@@ -12790,8 +12790,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Envelope", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Envelope", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EnvelopeType {
         
         private object[] itemsField;
@@ -12855,7 +12855,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType8 {
         
         /// <remarks/>
@@ -12877,8 +12877,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("location", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("location", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LocationPropertyType {
         
         private object itemField;
@@ -12930,7 +12930,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractFeatureCollectionType : AbstractFeatureType {
         
         private FeaturePropertyType[] featureMemberField;
@@ -12964,8 +12964,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("featureMember", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("featureMember", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class FeaturePropertyType {
         
         private AbstractFeatureType abstractFeatureField;
@@ -13030,8 +13030,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("featureMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("featureMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class FeatureArrayPropertyType {
         
         private AbstractFeatureType[] abstractFeatureField;
@@ -13053,7 +13053,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class BoundedFeatureType : AbstractFeatureType {
     }
     
@@ -13064,7 +13064,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCoverageType : AbstractFeatureType {
         
         private DomainSetType domainSetField;
@@ -13097,8 +13097,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("domainSet", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("domainSet", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DomainSetType {
         
         private AbstractGMLType itemField;
@@ -13165,8 +13165,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("rangeSet", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("rangeSet", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class RangeSetType {
         
         private object[] itemsField;
@@ -13191,8 +13191,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DataBlock", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DataBlock", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DataBlockType {
         
         private AssociationRoleType rangeParametersField;
@@ -13227,8 +13227,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("rangeParameters", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("rangeParameters", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AssociationRoleType {
         
         private System.Xml.XmlElement anyField;
@@ -13294,8 +13294,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("File", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("File", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class FileType {
         
         private AssociationRoleType rangeParametersField;
@@ -13380,7 +13380,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemChoiceType2 {
         
         /// <remarks/>
@@ -13395,8 +13395,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ValueArray", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ValueArray", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ValueArrayType : CompositeValueType {
         
         private string codeSpaceField;
@@ -13432,8 +13432,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CompositeValue", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CompositeValue", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompositeValueType : AbstractGMLType {
         
         private ValuePropertyType[] valueComponentField;
@@ -13493,8 +13493,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("valueProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("valueProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ValuePropertyType {
         
         private object abstractValueField;
@@ -13595,8 +13595,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("valueComponents", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("valueComponents", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ValueArrayPropertyType {
         
         private object[] abstractValueField;
@@ -13673,7 +13673,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum AggregationType {
         
         /// <remarks/>
@@ -13700,7 +13700,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractContinuousCoverageType : AbstractCoverageType {
         
         private CoverageFunctionType coverageFunctionField;
@@ -13721,8 +13721,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("coverageFunction", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("coverageFunction", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoverageFunctionType {
         
         private object itemField;
@@ -13746,8 +13746,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CoverageMappingRule", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CoverageMappingRule", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MappingRuleType {
         
         private object itemField;
@@ -13770,8 +13770,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GridFunction", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GridFunction", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GridFunctionType {
         
         private SequenceRuleType sequenceRuleField;
@@ -13804,7 +13804,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class SequenceRuleType {
         
         private IncrementOrder orderField;
@@ -13863,7 +13863,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum IncrementOrder {
         
         /// <remarks/>
@@ -13886,7 +13886,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum SequenceRuleEnumeration {
         
         /// <remarks/>
@@ -13975,7 +13975,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class DefinitionBaseType : AbstractGMLType {
     }
     
@@ -13989,7 +13989,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeometricAggregateType : AbstractGeometryType {
         
         private AggregationType aggregationTypeField;
@@ -14026,7 +14026,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class AbstractSolidType : AbstractGeometricPrimitiveType {
     }
     
@@ -14040,7 +14040,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractSurfaceType : AbstractGeometricPrimitiveType {
     }
     
@@ -14053,7 +14053,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCurveType : AbstractGeometricPrimitiveType {
     }
     
@@ -17894,7 +17894,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public AbstractGeometryType AbstractGeometry {
             get {
                 return this.abstractGeometryField;
@@ -18011,10 +18011,10 @@ namespace www.opengis.net {
         
         private string nilReasonField;
         
-        [XmlElement(typeof(TimeEdgeType), ElementName = "TimeEdge", Namespace = "http://www.opengis.net/gml/3.2")]
-        [XmlElement(typeof(TimeNodeType), ElementName = "TimeNode", Namespace = "http://www.opengis.net/gml/3.2")]
-        [XmlElement(typeof(TimePeriodType), ElementName = "TimePeriod", Namespace = "http://www.opengis.net/gml/3.2")]
-        [XmlElement(typeof(TimeInstantType), ElementName = "TimeInstant", Namespace = "http://www.opengis.net/gml/3.2")]
+        [XmlElement(typeof(TimeEdgeType), ElementName = "TimeEdge", Namespace = "http://www.opengis.net/gml")]
+        [XmlElement(typeof(TimeNodeType), ElementName = "TimeNode", Namespace = "http://www.opengis.net/gml")]
+        [XmlElement(typeof(TimePeriodType), ElementName = "TimePeriod", Namespace = "http://www.opengis.net/gml")]
+        [XmlElement(typeof(TimeInstantType), ElementName = "TimeInstant", Namespace = "http://www.opengis.net/gml")]
         public AbstractTimePrimitiveType AbstractTimePrimitive {
             get {
                 return this.abstractTimePrimitiveField;
@@ -18178,7 +18178,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public AbstractCRSType AbstractCRS {
             get {
                 return this.abstractCRSField;
@@ -18227,7 +18227,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCRSType : IdentifiedObjectType {
         
         private domainOfValidity[] domainOfValidityField;
@@ -18262,8 +18262,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class domainOfValidity {
         
         private EX_Extent_Type eX_ExtentField;
@@ -18357,7 +18357,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class IdentifiedObjectType : DefinitionType {
     }
     
@@ -18426,8 +18426,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Definition", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Definition", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DefinitionType : DefinitionBaseType {
         
         private string remarksField;
@@ -18450,7 +18450,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeneralOperationParameterType : IdentifiedObjectType {
         
         private string minimumOccursField;
@@ -18478,7 +18478,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCoordinateOperationType : IdentifiedObjectType {
         
         private domainOfValidity domainOfValidityField;
@@ -18561,8 +18561,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class coordinateOperationAccuracy {
         
         private AbstractDQ_PositionalAccuracy_Type abstractDQ_PositionalAccuracyField;
@@ -19131,7 +19131,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -19172,8 +19172,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("UnitDefinition", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("UnitDefinition", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class UnitDefinitionType : DefinitionType {
         
         private StringOrRefType quantityTypeField;
@@ -19462,8 +19462,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("sourceCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("sourceCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CRSPropertyType {
         
         private AbstractCRSType abstractCRSField;
@@ -19511,7 +19511,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeneralTransformationType : AbstractCoordinateOperationType {
     }
     
@@ -19521,7 +19521,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeneralConversionType : AbstractCoordinateOperationType {
     }
     
@@ -19536,7 +19536,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractDatumType : IdentifiedObjectType {
         
         private domainOfValidity domainOfValidityField;
@@ -19609,7 +19609,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class TemporalDatumBaseType : AbstractDatumType {
     }
     
@@ -19630,7 +19630,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCoordinateSystemType : IdentifiedObjectType {
         
         private CoordinateSystemAxisPropertyType[] axisField;
@@ -19678,8 +19678,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("axis", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("axis", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoordinateSystemAxisPropertyType {
         
         private CoordinateSystemAxisType coordinateSystemAxisField;
@@ -19726,8 +19726,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CoordinateSystemAxis", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CoordinateSystemAxis", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoordinateSystemAxisType : IdentifiedObjectType {
         
         private CodeType axisAbbrevField;
@@ -19837,7 +19837,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeneralDerivedCRSType : AbstractCRSType {
         
         private GeneralConversionPropertyType conversionField;
@@ -19858,8 +19858,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("conversion", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("conversion", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeneralConversionPropertyType {
         
         private AbstractGeneralConversionType abstractGeneralConversionField;
@@ -20982,7 +20982,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -25832,7 +25832,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -25880,7 +25880,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -25928,7 +25928,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -25976,7 +25976,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -26024,7 +26024,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -26072,7 +26072,7 @@ namespace www.opengis.net {
         private string nilReasonField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+        [System.Xml.Serialization.XmlElementAttribute(Namespace="http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition {
             get {
                 return this.unitDefinitionField;
@@ -26246,8 +26246,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("angle", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("angle", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AngleType : MeasureType {
     }
     
@@ -28653,7 +28653,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class AngleChoiceType {
         
         private object itemField;
@@ -28676,8 +28676,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("dmsAngleValue", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("dmsAngleValue", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DMSAngleType {
         
         private DegreesType degreesField;
@@ -28728,8 +28728,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("degrees", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("degrees", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DegreesType {
         
         private DegreesTypeDirection directionField;
@@ -28775,7 +28775,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
     public enum DegreesTypeDirection {
         
         /// <remarks/>
@@ -28802,7 +28802,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType10 {
         
         /// <remarks/>
@@ -28820,7 +28820,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeClockPropertyType {
         
         private TimeClockType timeClockField;
@@ -28885,8 +28885,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeClock", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeClock", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeClockType : TimeReferenceSystemType {
         
         private StringOrRefType referenceEventField;
@@ -28946,7 +28946,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeCalendarPropertyType {
         
         private TimeCalendarType timeCalendarField;
@@ -29011,8 +29011,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeCalendar", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeCalendar", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeCalendarType : TimeReferenceSystemType {
         
         private TimeCalendarEraPropertyType[] referenceFrameField;
@@ -29034,7 +29034,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeCalendarEraPropertyType {
         
         private TimeCalendarEraType timeCalendarEraField;
@@ -29099,8 +29099,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeCalendarEra", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeCalendarEra", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeCalendarEraType : DefinitionType {
         
         private StringOrRefType referenceEventField;
@@ -29157,7 +29157,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimePeriodPropertyType {
         
         private TimePeriodType timePeriodField;
@@ -29222,8 +29222,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimePeriod", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimePeriod", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimePeriodType : AbstractTimeGeometricPrimitiveType {
         
         private object itemField;
@@ -29285,7 +29285,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeInstantPropertyType {
         
         private TimeInstantType timeInstantField;
@@ -29350,8 +29350,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeInstant", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeInstant", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeInstantType : AbstractTimeGeometricPrimitiveType {
         
         private TimePositionType timePositionField;
@@ -29372,8 +29372,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("timePosition", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("timePosition", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimePositionType {
         
         private string frameField;
@@ -29450,7 +29450,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum TimeIndeterminateValueType {
         
         /// <remarks/>
@@ -29471,8 +29471,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("timeInterval", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("timeInterval", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeIntervalLengthType {
         
         private string unitField;
@@ -29537,8 +29537,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeReferenceSystem", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeReferenceSystem", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeReferenceSystemType : DefinitionType {
         
         private string domainOfValidityField;
@@ -29559,7 +29559,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeOrdinalEraPropertyType {
         
         private TimeOrdinalEraType timeOrdinalEraField;
@@ -29624,8 +29624,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeOrdinalEra", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeOrdinalEra", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeOrdinalEraType : DefinitionType {
         
         private RelatedTimeType[] relatedTimeField;
@@ -29708,7 +29708,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeNodePropertyType {
         
         private TimeNodeType timeNodeField;
@@ -29773,8 +29773,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeNode", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeNode", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeNodeType : AbstractTimeTopologyPrimitiveType {
         
         private TimeEdgePropertyType[] previousEdgeField;
@@ -29821,7 +29821,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeEdgePropertyType {
         
         private TimeEdgeType timeEdgeField;
@@ -29886,8 +29886,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeEdge", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeEdge", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeEdgeType : AbstractTimeTopologyPrimitiveType {
         
         private TimeNodePropertyType startField;
@@ -29932,7 +29932,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeTopologyComplexPropertyType {
         
         private TimeTopologyComplexType timeTopologyComplexField;
@@ -29997,8 +29997,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeTopologyComplex", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeTopologyComplex", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public abstract partial class TimeTopologyComplexType : AbstractTimeComplexType {
         
         private TimeTopologyPrimitivePropertyType[] primitiveField;
@@ -30020,7 +30020,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TimeTopologyPrimitivePropertyType {
         
         private AbstractTimeTopologyPrimitiveType abstractTimeTopologyPrimitiveField;
@@ -30087,7 +30087,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGeneralParameterValueType {
     }
     
@@ -30096,7 +30096,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class CountPropertyType {
         
         private Count countField;
@@ -30144,8 +30144,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=true)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=true)]
     public partial class Count {
         
         private string nilReasonField;
@@ -30180,7 +30180,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class QuantityPropertyType {
         
         private Quantity quantityField;
@@ -30228,8 +30228,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=true)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=true)]
     public partial class Quantity : MeasureType {
         
         private string nilReasonField;
@@ -30251,7 +30251,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class CategoryPropertyType {
         
         private Category categoryField;
@@ -30299,8 +30299,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=true)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=true)]
     public partial class Category : CodeType {
         
         private string nilReasonField;
@@ -30322,7 +30322,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class BooleanPropertyType {
         
         private Boolean booleanField;
@@ -30370,8 +30370,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=true)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=true)]
     public partial class Boolean {
         
         private string nilReasonField;
@@ -30406,7 +30406,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class TopoSolidPropertyType {
         
         private TopoSolidType itemField;
@@ -30472,8 +30472,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoSolid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoSolid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoSolidType : AbstractTopoPrimitiveType {
         
         private NodeOrEdgePropertyType[] isolatedField;
@@ -30564,7 +30564,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class NodeOrEdgePropertyType {
         
         private AbstractTopoPrimitiveType itemField;
@@ -30631,8 +30631,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Edge", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Edge", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EdgeType : AbstractTopoPrimitiveType {
         
         private TopoSolidPropertyType containerField;
@@ -30717,8 +30717,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("directedNode", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("directedNode", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedNodePropertyType {
         
         private NodeType nodeField;
@@ -30798,8 +30798,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Node", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Node", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class NodeType : AbstractTopoPrimitiveType {
         
         private FaceOrTopoSolidPropertyType containerField;
@@ -30871,7 +30871,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class FaceOrTopoSolidPropertyType {
         
         private AbstractTopoPrimitiveType itemField;
@@ -30938,8 +30938,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Face", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Face", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class FaceType : AbstractTopoPrimitiveType {
         
         private NodePropertyType[] isolatedField;
@@ -31043,7 +31043,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class NodePropertyType {
         
         private NodeType itemField;
@@ -31109,8 +31109,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("directedEdge", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("directedEdge", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedEdgePropertyType {
         
         private EdgeType edgeField;
@@ -31188,7 +31188,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum SignType {
         
         /// <remarks/>
@@ -31205,8 +31205,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("directedTopoSolid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("directedTopoSolid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedTopoSolidPropertyType {
         
         private TopoSolidType topoSolidField;
@@ -31286,8 +31286,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("surfaceProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("surfaceProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SurfacePropertyType {
         
         private AbstractSurfaceType abstractSurfaceField;
@@ -31352,8 +31352,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("pointProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("pointProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PointPropertyType {
         
         private PointType pointField;
@@ -31418,8 +31418,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("directedFace", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("directedFace", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedFacePropertyType {
         
         private FaceType faceField;
@@ -31499,8 +31499,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("curveProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("curveProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CurvePropertyType {
         
         private AbstractCurveType abstractCurveField;
@@ -31565,8 +31565,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("solidProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("solidProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SolidPropertyType {
         
         private AbstractSolidType abstractSolidField;
@@ -31631,7 +31631,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class GeometricComplexPropertyType {
         
         private AbstractGeometryType itemField;
@@ -31700,8 +31700,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CompositeCurve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CompositeCurve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompositeCurveType : AbstractCurveType {
         
         private CurvePropertyType[] curveMemberField;
@@ -31749,8 +31749,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CompositeSolid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CompositeSolid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompositeSolidType : AbstractSolidType {
         
         private SolidPropertyType[] solidMemberField;
@@ -31798,8 +31798,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CompositeSurface", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CompositeSurface", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompositeSurfaceType : AbstractSurfaceType {
         
         private SurfacePropertyType[] surfaceMemberField;
@@ -31847,8 +31847,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeometricComplex", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeometricComplex", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeometricComplexType : AbstractGeometryType {
         
         private GeometricPrimitivePropertyType[] elementField;
@@ -31896,7 +31896,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class GeometricPrimitivePropertyType {
         
         private AbstractGeometricPrimitiveType abstractGeometricPrimitiveField;
@@ -31962,7 +31962,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractFeatureMemberType {
         
         private bool ownsField;
@@ -31989,7 +31989,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class DirectionDescriptionType {
         
         private object itemField;
@@ -32012,7 +32012,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum CompassPointEnumeration {
         
         /// <remarks/>
@@ -32069,7 +32069,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class DirectionVectorType {
         
         private object[] itemsField;
@@ -32108,15 +32108,15 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("vector", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("vector", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VectorType : DirectPositionType {
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType9 {
         
         /// <remarks/>
@@ -32134,7 +32134,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class RingPropertyType {
         
         private RingType ringField;
@@ -32155,8 +32155,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Ring", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Ring", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class RingType : AbstractRingType {
         
         private CurvePropertyType[] curveMemberField;
@@ -32206,7 +32206,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractRingType {
     }
     
@@ -32215,7 +32215,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class LinearRingPropertyType {
         
         private LinearRingType linearRingField;
@@ -32236,8 +32236,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("LinearRing", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("LinearRing", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LinearRingType : AbstractRingType {
         
         private object[] itemsField;
@@ -32278,8 +32278,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("posList", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("posList", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectPositionListType {
         
         private string srsNameField;
@@ -32338,7 +32338,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType6 {
         
         /// <remarks/>
@@ -32362,7 +32362,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractMetadataPropertyType {
         
         private bool ownsField;
@@ -32389,7 +32389,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class InlinePropertyType {
         
         private System.Xml.XmlElement anyField;
@@ -32429,7 +32429,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class GridEnvelopeType {
         
         private string lowField;
@@ -32462,7 +32462,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class GridLimitsType {
         
         private GridEnvelopeType gridEnvelopeField;
@@ -32483,7 +32483,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class ShellPropertyType {
         
         private ShellType shellField;
@@ -32504,8 +32504,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Shell", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Shell", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ShellType {
         
         private SurfacePropertyType[] surfaceMemberField;
@@ -32553,7 +32553,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class LineStringSegmentArrayPropertyType {
         
         private LineStringSegmentType[] lineStringSegmentField;
@@ -32575,8 +32575,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("LineStringSegment", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("LineStringSegment", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LineStringSegmentType : AbstractCurveSegmentType {
         
         private object[] itemsField;
@@ -32645,7 +32645,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType1 {
         
         /// <remarks/>
@@ -32667,7 +32667,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum CurveInterpolationType {
         
         /// <remarks/>
@@ -32724,7 +32724,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractCurveSegmentType {
         
         private string numDerivativesAtStartField;
@@ -32789,7 +32789,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractSurfacePatchType {
     }
     
@@ -32802,7 +32802,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractParametricCurveSurfaceType : AbstractSurfacePatchType {
         
         private AggregationType aggregationTypeField;
@@ -32840,7 +32840,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractGriddedSurfaceType : AbstractParametricCurveSurfaceType {
         
         private AbstractGriddedSurfaceTypeRow[] rowsField;
@@ -32888,7 +32888,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
     public partial class AbstractGriddedSurfaceTypeRow {
         
         private object itemField;
@@ -32912,7 +32912,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class KnotType {
         
         private double valueField;
@@ -32958,7 +32958,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class KnotPropertyType {
         
         private KnotType knotField;
@@ -32979,7 +32979,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public partial class FormulaType {
         
         private double aField;
@@ -33063,7 +33063,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public abstract partial class AbstractMemberType {
         
         private bool ownsField;
@@ -33090,8 +33090,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Dictionary", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Dictionary", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DictionaryType : DefinitionType {
         
         private object[] itemsField;
@@ -33140,8 +33140,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("dictionaryEntry", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("dictionaryEntry", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DictionaryEntryType : AbstractMemberType {
         
         private DefinitionType definitionField;
@@ -33188,8 +33188,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("indirectEntry", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("indirectEntry", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class IndirectEntryType {
         
         private DefinitionProxyType definitionProxyField;
@@ -33210,8 +33210,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DefinitionProxy", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DefinitionProxy", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DefinitionProxyType : DefinitionType {
         
         private ReferenceType definitionRefField;
@@ -33234,8 +33234,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("unitOfMeasure", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("unitOfMeasure", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class UnitOfMeasureType {
         
         private string uomField;
@@ -33257,8 +33257,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("BaseUnit", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("BaseUnit", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class BaseUnitType : UnitDefinitionType {
         
         private ReferenceType unitsSystemField;
@@ -33279,8 +33279,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DerivedUnit", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DerivedUnit", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DerivedUnitType : UnitDefinitionType {
         
         private DerivationUnitTermType[] derivationUnitTermField;
@@ -33302,8 +33302,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("derivationUnitTerm", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("derivationUnitTerm", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DerivationUnitTermType : UnitOfMeasureType {
         
         private string exponentField;
@@ -33325,8 +33325,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ConventionalUnit", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ConventionalUnit", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConventionalUnitType : UnitDefinitionType {
         
         private ConversionToPreferredUnitType itemField;
@@ -33376,8 +33376,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("conversionToPreferredUnit", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("conversionToPreferredUnit", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConversionToPreferredUnitType : UnitOfMeasureType {
         
         private object itemField;
@@ -33398,7 +33398,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemChoiceType {
         
         /// <remarks/>
@@ -33413,8 +33413,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("LineString", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("LineString", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LineStringType : AbstractCurveType {
         
         private object[] itemsField;
@@ -33453,7 +33453,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType {
         
         /// <remarks/>
@@ -33477,8 +33477,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Polygon", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Polygon", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PolygonType : AbstractSurfaceType {
         
         private AbstractRingPropertyType exteriorField;
@@ -33512,8 +33512,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("exterior", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("exterior", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AbstractRingPropertyType {
         
         private AbstractRingType abstractRingField;
@@ -33534,8 +33534,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Curve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Curve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CurveType : AbstractCurveType {
         
         private CurveSegmentArrayPropertyType segmentsField;
@@ -33556,8 +33556,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("segments", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("segments", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CurveSegmentArrayPropertyType {
         
         private AbstractCurveSegmentType[] abstractCurveSegmentField;
@@ -33579,8 +33579,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OrientableCurve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OrientableCurve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OrientableCurveType : AbstractCurveType {
         
         private CurvePropertyType baseCurveField;
@@ -33621,8 +33621,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ArcString", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ArcString", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArcStringType : AbstractCurveSegmentType {
         
         private object[] itemsField;
@@ -33704,7 +33704,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType2 {
         
         /// <remarks/>
@@ -33729,8 +33729,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Arc", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Arc", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArcType : ArcStringType {
     }
     
@@ -33739,8 +33739,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Circle", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Circle", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CircleType : ArcType {
     }
     
@@ -33750,8 +33750,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ArcStringByBulge", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ArcStringByBulge", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArcStringByBulgeType : AbstractCurveSegmentType {
         
         private object[] itemsField;
@@ -33859,7 +33859,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType3 {
         
         /// <remarks/>
@@ -33883,8 +33883,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ArcByBulge", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ArcByBulge", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArcByBulgeType : ArcStringByBulgeType {
     }
     
@@ -33894,8 +33894,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ArcByCenterPoint", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ArcByCenterPoint", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArcByCenterPointType : AbstractCurveSegmentType {
         
         private object itemField;
@@ -34013,7 +34013,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemChoiceType1 {
         
         /// <remarks/>
@@ -34037,8 +34037,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CircleByCenterPoint", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CircleByCenterPoint", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CircleByCenterPointType : ArcByCenterPointType {
     }
     
@@ -34047,8 +34047,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CubicSpline", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CubicSpline", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CubicSplineType : AbstractCurveSegmentType {
         
         private object[] itemsField;
@@ -34155,7 +34155,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType4 {
         
         /// <remarks/>
@@ -34180,8 +34180,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("BSpline", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("BSpline", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class BSplineType : AbstractCurveSegmentType {
         
         private object[] itemsField;
@@ -34316,7 +34316,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType5 {
         
         /// <remarks/>
@@ -34338,7 +34338,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum KnotTypesType {
         
         /// <remarks/>
@@ -34356,8 +34356,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Bezier", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Bezier", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class BezierType : BSplineType {
     }
     
@@ -34366,8 +34366,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OffsetCurve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OffsetCurve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OffsetCurveType : AbstractCurveSegmentType {
         
         private CurvePropertyType offsetBaseField;
@@ -34412,8 +34412,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("AffinePlacement", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("AffinePlacement", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AffinePlacementType {
         
         private DirectPositionType locationField;
@@ -34473,8 +34473,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Clothoid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Clothoid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ClothoidType : AbstractCurveSegmentType {
         
         private ClothoidTypeRefLocation refLocationField;
@@ -34561,7 +34561,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
     public partial class ClothoidTypeRefLocation {
         
         private AffinePlacementType affinePlacementField;
@@ -34583,8 +34583,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeodesicString", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeodesicString", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodesicStringType : AbstractCurveSegmentType {
         
         private object itemField;
@@ -34638,8 +34638,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Geodesic", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Geodesic", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodesicType : GeodesicStringType {
     }
     
@@ -34649,8 +34649,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Surface", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Surface", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SurfaceType : AbstractSurfaceType {
         
         private SurfacePatchArrayPropertyType patchesField;
@@ -34671,8 +34671,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("patches", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("patches", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SurfacePatchArrayPropertyType {
         
         private AbstractSurfacePatchType[] abstractSurfacePatchField;
@@ -34694,8 +34694,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OrientableSurface", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OrientableSurface", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OrientableSurfaceType : AbstractSurfaceType {
         
         private SurfacePropertyType baseSurfaceField;
@@ -34734,8 +34734,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("PolygonPatch", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("PolygonPatch", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PolygonPatchType : AbstractSurfacePatchType {
         
         private AbstractRingPropertyType exteriorField;
@@ -34797,7 +34797,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
     public enum SurfaceInterpolationType {
         
         /// <remarks/>
@@ -34836,8 +34836,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Triangle", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Triangle", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TriangleType : AbstractSurfacePatchType {
         
         private AbstractRingPropertyType exteriorField;
@@ -34888,8 +34888,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Rectangle", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Rectangle", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class RectangleType : AbstractSurfacePatchType {
         
         private AbstractRingPropertyType exteriorField;
@@ -34940,8 +34940,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Cone", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Cone", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConeType : AbstractGriddedSurfaceType {
         
         private CurveInterpolationType horizontalCurveTypeField;
@@ -35007,8 +35007,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Cylinder", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Cylinder", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CylinderType : AbstractGriddedSurfaceType {
         
         private CurveInterpolationType horizontalCurveTypeField;
@@ -35074,8 +35074,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Sphere", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Sphere", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SphereType : AbstractGriddedSurfaceType {
         
         private CurveInterpolationType horizontalCurveTypeField;
@@ -35141,8 +35141,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Tin", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Tin", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TinType : SurfaceType {
         
         private LineStringSegmentArrayPropertyType[] stopLinesField;
@@ -35201,7 +35201,7 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
     public partial class TinTypeControlPoint {
         
         private object itemField;
@@ -35225,8 +35225,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Solid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Solid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SolidType : AbstractSolidType {
         
         private ShellPropertyType exteriorField;
@@ -35260,8 +35260,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiGeometry", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiGeometry", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiGeometryType : AbstractGeometricAggregateType {
         
         private GeometryPropertyType[] geometryMemberField;
@@ -35295,8 +35295,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("geometryMember", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("geometryMember", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeometryPropertyType {
         
         private AbstractGeometryType abstractGeometryField;
@@ -35361,8 +35361,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("geometryMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("geometryMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeometryArrayPropertyType {
         
         private AbstractGeometryType[] abstractGeometryField;
@@ -35402,8 +35402,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiPoint", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiPoint", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiPointType : AbstractGeometricAggregateType {
         
         private PointPropertyType[] pointMemberField;
@@ -35437,8 +35437,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("pointMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("pointMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PointArrayPropertyType {
         
         private PointType[] pointField;
@@ -35478,8 +35478,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiCurve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiCurve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiCurveType : AbstractGeometricAggregateType {
         
         private CurvePropertyType[] curveMemberField;
@@ -35513,8 +35513,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("curveMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("curveMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CurveArrayPropertyType {
         
         private AbstractCurveType[] abstractCurveField;
@@ -35554,8 +35554,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiSurface", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiSurface", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiSurfaceType : AbstractGeometricAggregateType {
         
         private SurfacePropertyType[] surfaceMemberField;
@@ -35589,8 +35589,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("surfaceMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("surfaceMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SurfaceArrayPropertyType {
         
         private AbstractSurfaceType[] abstractSurfaceField;
@@ -35630,8 +35630,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiSolid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiSolid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiSolidType : AbstractGeometricAggregateType {
         
         private SolidPropertyType[] solidMemberField;
@@ -35665,8 +35665,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("solidMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("solidMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SolidArrayPropertyType {
         
         private AbstractSolidType[] abstractSolidField;
@@ -35706,8 +35706,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("EnvelopeWithTimePeriod", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("EnvelopeWithTimePeriod", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EnvelopeWithTimePeriodType : EnvelopeType {
         
         private TimePositionType beginPositionField;
@@ -35758,8 +35758,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("direction", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("direction", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectionPropertyType {
         
         private object itemField;
@@ -35830,8 +35830,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DynamicFeature", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DynamicFeature", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DynamicFeatureType : AbstractFeatureType {
         
         private TimePrimitivePropertyType validTimeField;
@@ -35888,8 +35888,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("history", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("history", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class HistoryPropertyType {
         
         private AbstractTimeSliceType[] abstractTimeSliceField;
@@ -35929,8 +35929,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DynamicFeatureCollection", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DynamicFeatureCollection", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DynamicFeatureCollectionType : DynamicFeatureType {
         
         private DynamicFeatureMemberType dynamicMembersField;
@@ -35951,8 +35951,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("dynamicMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("dynamicMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DynamicFeatureMemberType : AbstractFeatureMemberType {
         
         private DynamicFeatureType[] dynamicFeatureField;
@@ -36000,8 +36000,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoPoint", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoPoint", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoPointType : AbstractTopologyType {
         
         private DirectedNodePropertyType directedNodeField;
@@ -36022,8 +36022,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoPointProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoPointProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoPointPropertyType {
         
         private TopoPointType topoPointField;
@@ -36062,8 +36062,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoCurve", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoCurve", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoCurveType : AbstractTopologyType {
         
         private DirectedEdgePropertyType[] directedEdgeField;
@@ -36111,8 +36111,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoCurveProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoCurveProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoCurvePropertyType {
         
         private TopoCurveType topoCurveField;
@@ -36151,8 +36151,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoSurface", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoSurface", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoSurfaceType : AbstractTopologyType {
         
         private DirectedFacePropertyType[] directedFaceField;
@@ -36200,8 +36200,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoSurfaceProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoSurfaceProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoSurfacePropertyType {
         
         private TopoSurfaceType topoSurfaceField;
@@ -36240,8 +36240,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoVolume", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoVolume", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoVolumeType : AbstractTopologyType {
         
         private DirectedTopoSolidPropertyType[] directedTopoSolidField;
@@ -36289,8 +36289,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoVolumeProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoVolumeProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoVolumePropertyType {
         
         private TopoVolumeType topoVolumeField;
@@ -36329,8 +36329,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TopoComplex", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TopoComplex", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoComplexType : AbstractTopologyType {
         
         private TopoComplexPropertyType maximalComplexField;
@@ -36446,8 +36446,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("subComplex", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("subComplex", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoComplexPropertyType {
         
         private TopoComplexType topoComplexField;
@@ -36494,8 +36494,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoPrimitiveMember", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoPrimitiveMember", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoPrimitiveMemberType {
         
         private AbstractTopoPrimitiveType abstractTopoPrimitiveField;
@@ -36560,8 +36560,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("topoPrimitiveMembers", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("topoPrimitiveMembers", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TopoPrimitiveArrayAssociationType {
         
         private AbstractTopoPrimitiveType[] abstractTopoPrimitiveField;
@@ -36602,8 +36602,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CategoryList", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CategoryList", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CodeOrNilReasonListType {
         
         private string codeSpaceField;
@@ -36639,8 +36639,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("QuantityList", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("QuantityList", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MeasureOrNilReasonListType {
         
         private string uomField;
@@ -36675,8 +36675,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CategoryExtent", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CategoryExtent", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CategoryExtentType : CodeOrNilReasonListType {
     }
     
@@ -36685,8 +36685,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("QuantityExtent", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("QuantityExtent", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class QuantityExtentType : MeasureOrNilReasonListType {
     }
     
@@ -36696,8 +36696,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Grid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Grid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GridType : AbstractGeometryType {
         
         private GridLimitsType limitsField;
@@ -36758,7 +36758,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemsChoiceType7 {
         
         /// <remarks/>
@@ -36773,8 +36773,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("RectifiedGrid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("RectifiedGrid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class RectifiedGridType : GridType {
         
         private PointPropertyType originField;
@@ -36808,8 +36808,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MultiPointCoverage", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MultiPointCoverage", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DiscreteCoverageType : AbstractCoverageType {
         
         private CoverageFunctionType coverageFunctionField;
@@ -36830,8 +36830,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("EllipsoidalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("EllipsoidalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EllipsoidalCSType : AbstractCoordinateSystemType {
     }
     
@@ -36840,8 +36840,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CartesianCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CartesianCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CartesianCSType : AbstractCoordinateSystemType {
     }
     
@@ -36850,8 +36850,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("VerticalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("VerticalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalCSType : AbstractCoordinateSystemType {
     }
     
@@ -36860,8 +36860,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeCSType : AbstractCoordinateSystemType {
     }
     
@@ -36870,8 +36870,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("LinearCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("LinearCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LinearCSType : AbstractCoordinateSystemType {
     }
     
@@ -36880,8 +36880,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("UserDefinedCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("UserDefinedCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class UserDefinedCSType : AbstractCoordinateSystemType {
     }
     
@@ -36890,8 +36890,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("SphericalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("SphericalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SphericalCSType : AbstractCoordinateSystemType {
     }
     
@@ -36900,8 +36900,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("PolarCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("PolarCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PolarCSType : AbstractCoordinateSystemType {
     }
     
@@ -36910,8 +36910,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CylindricalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CylindricalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CylindricalCSType : AbstractCoordinateSystemType {
     }
     
@@ -36920,8 +36920,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("AffineCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("AffineCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AffineCSType : AbstractCoordinateSystemType {
     }
     
@@ -36930,8 +36930,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeodeticDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeodeticDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodeticDatumType : AbstractDatumType {
         
         private PrimeMeridianPropertyType primeMeridianField;
@@ -36964,8 +36964,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("primeMeridian", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("primeMeridian", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PrimeMeridianPropertyType {
         
         private PrimeMeridianType primeMeridianField;
@@ -37012,8 +37012,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("PrimeMeridian", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("PrimeMeridian", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PrimeMeridianType : IdentifiedObjectType {
         
         private AngleType greenwichLongitudeField;
@@ -37034,8 +37034,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ellipsoid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ellipsoid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EllipsoidPropertyType {
         
         private EllipsoidType ellipsoidField;
@@ -37082,8 +37082,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Ellipsoid", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Ellipsoid", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EllipsoidType : IdentifiedObjectType {
         
         private MeasureType semiMajorAxisField;
@@ -37116,8 +37116,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class secondDefiningParameter {
         
         private SecondDefiningParameter secondDefiningParameterField;
@@ -37138,8 +37138,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SecondDefiningParameter {
         
         private object itemField;
@@ -37163,8 +37163,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("EngineeringDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("EngineeringDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EngineeringDatumType : AbstractDatumType {
     }
     
@@ -37173,8 +37173,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ImageDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ImageDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ImageDatumType : AbstractDatumType {
         
         private CodeWithAuthorityType pixelInCellField;
@@ -37195,8 +37195,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("VerticalDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("VerticalDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalDatumType : AbstractDatumType {
     }
     
@@ -37205,8 +37205,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TemporalDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TemporalDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalDatumType : TemporalDatumBaseType {
         
         private System.DateTime originField;
@@ -37227,8 +37227,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ConcatenatedOperation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ConcatenatedOperation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConcatenatedOperationType : AbstractCoordinateOperationType {
         
         private CoordinateOperationPropertyType[] coordOperationField;
@@ -37276,8 +37276,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("coordOperation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("coordOperation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoordinateOperationPropertyType {
         
         private AbstractCoordinateOperationType abstractCoordinateOperationField;
@@ -37324,8 +37324,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("PassThroughOperation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("PassThroughOperation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PassThroughOperationType : AbstractCoordinateOperationType {
         
         private string[] modifiedCoordinateField;
@@ -37385,8 +37385,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Conversion", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Conversion", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConversionType : AbstractGeneralConversionType {
         
         private OperationMethodPropertyType methodField;
@@ -37420,8 +37420,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("method", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("method", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationMethodPropertyType {
         
         private OperationMethodType operationMethodField;
@@ -37468,8 +37468,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OperationMethod", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OperationMethod", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationMethodType : IdentifiedObjectType {
         
         private object itemField;
@@ -37531,8 +37531,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class formulaCitation {
         
         private CI_Citation_Type cI_CitationField;
@@ -37580,8 +37580,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("parameter", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("parameter", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AbstractGeneralOperationParameterPropertyType {
         
         private AbstractGeneralOperationParameterType abstractGeneralOperationParameterField;
@@ -37628,8 +37628,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("parameterValue", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("parameterValue", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AbstractGeneralParameterValuePropertyType {
         
         private AbstractGeneralParameterValueType abstractGeneralParameterValueField;
@@ -37650,8 +37650,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Transformation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Transformation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TransformationType : AbstractGeneralTransformationType {
         
         private OperationMethodPropertyType methodField;
@@ -37685,8 +37685,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ParameterValue", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ParameterValue", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ParameterValueType : AbstractGeneralParameterValueType {
         
         private object itemField;
@@ -37741,8 +37741,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("valueList", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("valueList", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MeasureListType {
         
         private string uomField;
@@ -37775,7 +37775,7 @@ namespace www.opengis.net {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2", IncludeInSchema=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml", IncludeInSchema=false)]
     public enum ItemChoiceType3 {
         
         /// <remarks/>
@@ -37808,8 +37808,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("operationParameter", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("operationParameter", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationParameterPropertyType {
         
         private OperationParameterType operationParameterField;
@@ -37856,8 +37856,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OperationParameter", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OperationParameter", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationParameterType : AbstractGeneralOperationParameterType {
     }
     
@@ -37866,8 +37866,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ParameterValueGroup", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ParameterValueGroup", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ParameterValueGroupType : AbstractGeneralParameterValueType {
         
         private AbstractGeneralParameterValuePropertyType[] parameterValueField;
@@ -37901,8 +37901,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("group", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("group", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationParameterGroupPropertyType {
         
         private OperationParameterGroupType operationParameterGroupField;
@@ -37949,8 +37949,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("OperationParameterGroup", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("OperationParameterGroup", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationParameterGroupType : AbstractGeneralOperationParameterType {
         
         private string maximumOccursField;
@@ -37985,8 +37985,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("CompoundCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("CompoundCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompoundCRSType : AbstractCRSType {
         
         private SingleCRSPropertyType[] componentReferenceSystemField;
@@ -38034,8 +38034,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("componentReferenceSystem", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("componentReferenceSystem", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SingleCRSPropertyType {
         
         private AbstractCRSType abstractSingleCRSField;
@@ -38082,8 +38082,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeodeticCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeodeticCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodeticCRSType : AbstractCRSType {
         
         private object itemField;
@@ -38119,8 +38119,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("cartesianCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("cartesianCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CartesianCSPropertyType {
         
         private CartesianCSType cartesianCSField;
@@ -38167,8 +38167,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ellipsoidalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ellipsoidalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EllipsoidalCSPropertyType {
         
         private EllipsoidalCSType ellipsoidalCSField;
@@ -38215,8 +38215,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("sphericalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("sphericalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SphericalCSPropertyType {
         
         private SphericalCSType sphericalCSField;
@@ -38263,8 +38263,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("geodeticDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("geodeticDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodeticDatumPropertyType {
         
         private GeodeticDatumType geodeticDatumField;
@@ -38311,8 +38311,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("VerticalCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("VerticalCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalCRSType : AbstractCRSType {
         
         private VerticalCSPropertyType verticalCSField;
@@ -38345,8 +38345,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("verticalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("verticalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalCSPropertyType {
         
         private VerticalCSType verticalCSField;
@@ -38393,8 +38393,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("verticalDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("verticalDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalDatumPropertyType {
         
         private VerticalDatumType verticalDatumField;
@@ -38441,8 +38441,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ProjectedCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ProjectedCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ProjectedCRSType : AbstractGeneralDerivedCRSType {
         
         private object itemField;
@@ -38477,8 +38477,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("baseGeodeticCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("baseGeodeticCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeodeticCRSPropertyType {
         
         private GeodeticCRSType geodeticCRSField;
@@ -38525,8 +38525,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("baseGeographicCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("baseGeographicCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeographicCRSPropertyType {
         
         private GeographicCRSType geographicCRSField;
@@ -38573,8 +38573,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeographicCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeographicCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeographicCRSType : AbstractCRSType {
         
         private EllipsoidalCSPropertyType usesEllipsoidalCSField;
@@ -38607,8 +38607,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DerivedCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DerivedCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DerivedCRSType : AbstractGeneralDerivedCRSType {
         
         private SingleCRSPropertyType baseCRSField;
@@ -38653,8 +38653,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("coordinateSystem", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("coordinateSystem", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CoordinateSystemPropertyType {
         
         private AbstractCoordinateSystemType abstractCoordinateSystemField;
@@ -38701,8 +38701,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("EngineeringCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("EngineeringCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EngineeringCRSType : AbstractCRSType {
         
         private object itemField;
@@ -38743,8 +38743,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("affineCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("affineCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class AffineCSPropertyType {
         
         private AffineCSType affineCSField;
@@ -38791,8 +38791,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("cylindricalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("cylindricalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CylindricalCSPropertyType {
         
         private CylindricalCSType cylindricalCSField;
@@ -38839,8 +38839,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("linearCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("linearCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class LinearCSPropertyType {
         
         private LinearCSType linearCSField;
@@ -38887,8 +38887,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("polarCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("polarCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PolarCSPropertyType {
         
         private PolarCSType polarCSField;
@@ -38935,8 +38935,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("userDefinedCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("userDefinedCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class UserDefinedCSPropertyType {
         
         private UserDefinedCSType userDefinedCSField;
@@ -38983,8 +38983,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("engineeringDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("engineeringDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EngineeringDatumPropertyType {
         
         private EngineeringDatumType engineeringDatumField;
@@ -39031,8 +39031,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ImageCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ImageCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ImageCRSType : AbstractCRSType {
         
         private object itemField;
@@ -39068,8 +39068,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("obliqueCartesianCSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("obliqueCartesianCSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ObliqueCartesianCSPropertyType {
         
         private ObliqueCartesianCSType obliqueCartesianCSField;
@@ -39116,8 +39116,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("ObliqueCartesianCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("ObliqueCartesianCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ObliqueCartesianCSType : AbstractCoordinateSystemType {
     }
     
@@ -39126,8 +39126,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("imageDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("imageDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ImageDatumPropertyType {
         
         private ImageDatumType imageDatumField;
@@ -39174,8 +39174,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TemporalCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TemporalCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalCRSType : AbstractCRSType {
         
         private object itemField;
@@ -39210,8 +39210,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("timeCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("timeCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeCSPropertyType {
         
         private TimeCSType timeCSField;
@@ -39258,8 +39258,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("temporalCSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("temporalCSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalCSPropertyType {
         
         private TemporalCSType temporalCSField;
@@ -39306,8 +39306,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TemporalCS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TemporalCS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalCSType : AbstractCoordinateSystemType {
     }
     
@@ -39316,8 +39316,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("temporalDatum", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("temporalDatum", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalDatumPropertyType {
         
         private TemporalDatumType temporalDatumField;
@@ -39366,8 +39366,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Observation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Observation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ObservationType : AbstractFeatureType {
         
         private TimePrimitivePropertyType validTimeField;
@@ -39424,8 +39424,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("using", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("using", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ProcedurePropertyType {
         
         private AbstractFeatureType abstractFeatureField;
@@ -39490,8 +39490,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("target", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("target", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TargetPropertyType {
         
         private AbstractGMLType itemField;
@@ -39558,8 +39558,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("resultOf", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("resultOf", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ResultType {
         
         private System.Xml.XmlElement anyField;
@@ -39626,8 +39626,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DirectedObservation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DirectedObservation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedObservationType : ObservationType {
         
         private DirectionPropertyType directionField;
@@ -39648,8 +39648,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("DirectedObservationAtDistance", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("DirectedObservationAtDistance", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DirectedObservationAtDistanceType : DirectedObservationType {
         
         private MeasureType distanceField;
@@ -39670,8 +39670,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeCoordinateSystem", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeCoordinateSystem", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeCoordinateSystemType : TimeReferenceSystemType {
         
         private object itemField;
@@ -39706,8 +39706,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("TimeOrdinalReferenceSystem", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("TimeOrdinalReferenceSystem", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TimeOrdinalReferenceSystemType : TimeReferenceSystemType {
         
         private TimeOrdinalEraPropertyType[] componentField;
@@ -39729,8 +39729,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("datumRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("datumRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DatumPropertyType {
         
         private AbstractDatumType abstractDatumField;
@@ -39777,8 +39777,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("singleOperationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("singleOperationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class SingleOperationPropertyType {
         
         private AbstractCoordinateOperationType abstractSingleOperationField;
@@ -39825,8 +39825,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("operationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("operationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class OperationPropertyType {
         
         private AbstractCoordinateOperationType abstractOperationField;
@@ -39873,8 +39873,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("generalTransformationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("generalTransformationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeneralTransformationPropertyType {
         
         private AbstractGeneralTransformationType abstractGeneralTransformationField;
@@ -39921,8 +39921,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("concatenatedOperationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("concatenatedOperationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConcatenatedOperationPropertyType {
         
         private ConcatenatedOperationType concatenatedOperationField;
@@ -39969,8 +39969,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("passThroughOperationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("passThroughOperationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PassThroughOperationPropertyType {
         
         private PassThroughOperationType passThroughOperationField;
@@ -40017,8 +40017,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("conversionRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("conversionRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ConversionPropertyType {
         
         private ConversionType conversionField;
@@ -40065,8 +40065,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("transformationRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("transformationRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TransformationPropertyType {
         
         private TransformationType transformationField;
@@ -40113,8 +40113,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("compoundCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("compoundCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class CompoundCRSPropertyType {
         
         private CompoundCRSType compoundCRSField;
@@ -40161,8 +40161,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("verticalCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("verticalCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class VerticalCRSPropertyType {
         
         private VerticalCRSType verticalCRSField;
@@ -40209,8 +40209,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("projectedCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("projectedCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ProjectedCRSPropertyType {
         
         private ProjectedCRSType projectedCRSField;
@@ -40257,8 +40257,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("derivedCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("derivedCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class DerivedCRSPropertyType {
         
         private DerivedCRSType derivedCRSField;
@@ -40305,8 +40305,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("engineeringCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("engineeringCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class EngineeringCRSPropertyType {
         
         private EngineeringCRSType engineeringCRSField;
@@ -40353,8 +40353,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("imageCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("imageCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ImageCRSPropertyType {
         
         private ImageCRSType imageCRSField;
@@ -40401,8 +40401,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("temporalCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("temporalCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class TemporalCRSPropertyType {
         
         private TemporalCRSType temporalCRSField;
@@ -40449,8 +40449,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GeocentricCRS", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GeocentricCRS", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeocentricCRSType : AbstractCRSType {
         
         private object itemField;
@@ -40485,8 +40485,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("geocentricCRSRef", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("geocentricCRSRef", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GeocentricCRSPropertyType {
         
         private GeocentricCRSType geocentricCRSField;
@@ -40533,8 +40533,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("members", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("members", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArrayAssociationType {
         
         private object[] abstractObjectField;
@@ -40574,8 +40574,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="BagType", Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Bag", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="BagType", Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Bag", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class BagType1 : AbstractGMLType {
         
         private AssociationRoleType[] memberField;
@@ -40609,8 +40609,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ArrayType", Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("Array", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ArrayType", Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("Array", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class ArrayType1 : AbstractGMLType {
         
         private ArrayAssociationType membersField;
@@ -40631,8 +40631,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("GenericMetaData", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("GenericMetaData", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class GenericMetaDataType : AbstractMetaDataType {
         
         private System.Xml.XmlElement[] anyField;
@@ -40654,8 +40654,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("priorityLocation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("priorityLocation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class PriorityLocationPropertyType : LocationPropertyType {
         
         private string priorityField;
@@ -40677,8 +40677,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("FeatureCollection", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("FeatureCollection", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class FeatureCollectionType : AbstractFeatureCollectionType {
     }
     
@@ -40687,8 +40687,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("multiLocation", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("multiLocation", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiPointPropertyType {
         
         private MultiPointType multiPointField;
@@ -40753,8 +40753,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("multiCenterLineOf", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("multiCenterLineOf", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiCurvePropertyType {
         
         private MultiCurveType multiCurveField;
@@ -40819,8 +40819,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("multiCoverage", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("multiCoverage", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiSurfacePropertyType {
         
         private MultiSurfaceType multiSurfaceField;
@@ -40885,8 +40885,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("MovingObjectStatus", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("MovingObjectStatus", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MovingObjectStatusType : AbstractTimeSliceType {
         
         private object itemField;
@@ -40984,8 +40984,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("multiSolidProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("multiSolidProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiSolidPropertyType {
         
         private MultiSolidType multiSolidField;
@@ -41050,8 +41050,8 @@ namespace www.opengis.net {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml/3.2")]
-    [System.Xml.Serialization.XmlRootAttribute("multiGeometryProperty", Namespace="http://www.opengis.net/gml/3.2", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.opengis.net/gml")]
+    [System.Xml.Serialization.XmlRootAttribute("multiGeometryProperty", Namespace="http://www.opengis.net/gml", IsNullable=false)]
     public partial class MultiGeometryPropertyType {
         
         private AbstractGeometricAggregateType abstractGeometricAggregateField;
