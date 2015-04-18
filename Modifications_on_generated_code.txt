@@ -427,4 +427,5 @@ public enum GenericNameItemChoiceType {
     }
 
 
-# change namespace for all http://www.opengis.net/gml/3.2 to http://www.opengis.net/gml
+# change namespace for all http://www.opengis.net/gml/3.2 to http://www.opengis.net/gml and
+# those who previously had http://www.opengis.net/gml to http://www.opengis.net/gml/3.2
