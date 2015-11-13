@@ -19,7 +19,7 @@ In class:
 
 Add this attribute:
 
-        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
+        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleUriLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public SimpleLiteral[] Items {
 
@@ -32,6 +32,29 @@ Add this attribute:
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("http://purl.org/dc/elements/1.1/:URI")]
         URI,
+
+
+Add type: 
+
+ [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://purl.org/dc/elements/1.1/")]
+    [System.Xml.Serialization.XmlRootAttribute("title", Namespace = "http://purl.org/dc/elements/1.1/",
+        IsNullable = false)]
+    public partial class SimpleUriLiteral : SimpleLiteral
+    {
+        private string _protocolField;
+
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string protocol
+        {
+            get { return this._protocolField; }
+            set { this._protocolField = value; }
+        }
+    }
+
 
 
 # Fix funky version of xml-any element for InsertType

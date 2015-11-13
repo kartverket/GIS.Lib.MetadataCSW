@@ -161,6 +161,25 @@ namespace www.opengis.net
         }
     }
 
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://purl.org/dc/elements/1.1/")]
+    [System.Xml.Serialization.XmlRootAttribute("title", Namespace = "http://purl.org/dc/elements/1.1/",
+        IsNullable = false)]
+    public partial class SimpleUriLiteral : SimpleLiteral
+    {
+        private string _protocolField;
+
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string protocol
+        {
+            get { return this._protocolField; }
+            set { this._protocolField = value; }
+        }
+    }
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
@@ -855,7 +874,7 @@ namespace www.opengis.net
         [System.Xml.Serialization.XmlElementAttribute("subject", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlElementAttribute("title", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlElementAttribute("type", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
-        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
+        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(SimpleUriLiteral), Namespace = "http://purl.org/dc/elements/1.1/")]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public SimpleLiteral[] Items
         {
