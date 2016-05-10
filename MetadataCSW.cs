@@ -172,11 +172,20 @@ namespace www.opengis.net
     {
         private string _protocolField;
 
+        private string _nameField;
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string protocol
         {
             get { return this._protocolField; }
             set { this._protocolField = value; }
+        }
+
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string name
+        {
+            get { return this._nameField; }
+            set { this._nameField = value; }
         }
     }
 

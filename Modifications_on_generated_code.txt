@@ -36,7 +36,7 @@ Add this attribute:
 
 Add type: 
 
- [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -47,11 +47,20 @@ Add type:
     {
         private string _protocolField;
 
+        private string _nameField;
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string protocol
         {
             get { return this._protocolField; }
             set { this._protocolField = value; }
+        }
+
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string name
+        {
+            get { return this._nameField; }
+            set { this._nameField = value; }
         }
     }
 
