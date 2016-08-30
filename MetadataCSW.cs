@@ -23937,6 +23937,8 @@ namespace www.opengis.net
 
         private string nilReasonField;
 
+        private string hrefField;
+
         /// <remarks/>
         public MD_DataIdentification_Type MD_DataIdentification
         {
@@ -23975,6 +23977,19 @@ namespace www.opengis.net
             set
             {
                 this.nilReasonField = value;
+            }
+        }
+
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
             }
         }
     }
