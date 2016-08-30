@@ -461,3 +461,21 @@ public enum GenericNameItemChoiceType {
 
 # change namespace for all http://www.opengis.net/gml/3.2 to http://www.opengis.net/gml and
 # those who previously had http://www.opengis.net/gml to http://www.opengis.net/gml/3.2
+
+
+#Added support for MD_DataIdentification_PropertyType xlink:href
+
+        private string hrefField;
+
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
+            }
+        }
