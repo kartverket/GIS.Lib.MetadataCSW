@@ -13,6 +13,7 @@
 // 
 namespace www.opengis.net
 {
+    using System.Xml;
     using System.Xml.Serialization;
 
 
@@ -49443,39 +49444,83 @@ namespace www.opengis.net
         public void ReadXml(System.Xml.XmlReader reader)
         {
 
-            reader.Read();
+            var data = reader.ReadOuterXml();
 
-            if (reader.LocalName == "CharacterString")
+            if (data.Contains("PT_FreeText"))
             {
-                string charStr = reader.ReadElementString("CharacterString", "http://www.isotc211.org/2005/gco");
-                reader.Read();
-
-                MD_RestrictionOther = new CharacterString_PropertyType { CharacterString = charStr };
+                XmlDocument doc = new XmlDocument();
+                var nsmgr = new XmlNamespaceManager(doc.NameTable);
+                nsmgr.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+                nsmgr.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+                doc.LoadXml(data);
+                string otherConstraints = "";
+                string otherConstraintsEnglish = "";
+                var otherConstraintsNode = doc.SelectSingleNode("//gmd:otherConstraints/gco:CharacterString", nsmgr);
+                if (otherConstraintsNode != null)
+                    otherConstraints = otherConstraintsNode.InnerText;
+                var otherConstraintsEnglishNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", nsmgr);
+                if (otherConstraintsEnglishNode != null)
+                    otherConstraintsEnglish = otherConstraintsEnglishNode.InnerText;
+                MD_RestrictionOther = CreateFreeTextElement(otherConstraints, otherConstraintsEnglish);
 
             }
-            else
+            else if (data.Contains("gmx:Anchor"))
             {
+                XmlDocument doc = new XmlDocument();
+                var nsmgr = new XmlNamespaceManager(doc.NameTable);
+                nsmgr.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+                nsmgr.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+                nsmgr.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+                doc.LoadXml(data);
+                string otherConstraints = "";
+                string otherConstraintsLink = "";
+                var otherConstraintsNode = doc.SelectSingleNode("//gmd:otherConstraints/gmx:Anchor", nsmgr);
+                if (otherConstraintsNode != null)
+                    otherConstraints = otherConstraintsNode.InnerText;
+                var otherConstraintsLinkNode = doc.SelectSingleNode("//gmd:otherConstraints/gmx:Anchor/@xlink:href", nsmgr);
+                if (otherConstraintsLinkNode != null)
+                    otherConstraintsLink = otherConstraintsLinkNode.InnerText;
 
-                string anchorLink = reader.GetAttribute("xlink:href");
-                reader.Read();
-                string anchorText = reader.Value;
-
-                reader.Read();
-                reader.Read();
-                reader.Read();
-
-                MD_RestrictionOther = new Anchor_Type { Value = anchorText, href = anchorLink };
-
+                MD_RestrictionOther = new Anchor_Type { Value = otherConstraints, href = otherConstraintsLink };
             }
+            else if (data.Contains("gco:CharacterString"))
+            {
+                XmlDocument doc = new XmlDocument();
+                var nsmgr = new XmlNamespaceManager(doc.NameTable);
+                nsmgr.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+                nsmgr.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+                doc.LoadXml(data);
+                string otherConstraints = "";
+                var otherConstraintsNode = doc.SelectSingleNode("//gmd:otherConstraints/gco:CharacterString", nsmgr);
+                if (otherConstraintsNode != null)
+                    otherConstraints = otherConstraintsNode.InnerText;
 
-
+                MD_RestrictionOther = new CharacterString_PropertyType { CharacterString = otherConstraints };
+            }
 
         }
 
         public void WriteXml(System.Xml.XmlWriter writer)
         {
 
-            if (this.mD_RestrictionOtherField.GetType() == typeof(CharacterString_PropertyType))
+            if (this.mD_RestrictionOtherField.GetType() == typeof(PT_FreeText_PropertyType))
+            {
+                PT_FreeText_PropertyType charString = this.mD_RestrictionOtherField as PT_FreeText_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteAttributeString("locale", "#ENG");
+                    writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+            }
+            else if (this.mD_RestrictionOtherField.GetType() == typeof(CharacterString_PropertyType))
             {
                 CharacterString_PropertyType charString = this.mD_RestrictionOtherField as CharacterString_PropertyType;
                 if (charString != null)
@@ -49495,6 +49540,48 @@ namespace www.opengis.net
                 }
             }
 
+        }
+
+        public string GetEnglishValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#ENG"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElement(string characterString, string englishLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#ENG",
+                                     Value = englishLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
         }
     }
 
