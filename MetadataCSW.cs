@@ -19943,10 +19943,10 @@ namespace www.opengis.net
 
                 var anchor = doc.SelectSingleNode("//gmd:keyword/gmx:Anchor", ns);
 
-                XmlElement parentNode = doc.ParentNode as XmlElement;
+                XmlElement node = doc.DocumentElement as XmlElement;
 
-                if ((parentNode != null) && parentNode.HasAttribute("xsi:type") 
-                    && parentNode.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
+                if ((node != null) && node.HasAttribute("xsi:type") 
+                    && node.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
                 {
                     string keywordString = "";
                     string keywordEnglish = "";
