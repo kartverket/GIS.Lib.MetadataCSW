@@ -625,3 +625,191 @@ public enum GenericNameItemChoiceType {
                 }
             };
         }
+
+#Added support for Anchor_Type in MD_Keywords_Type
+
+    public partial class MD_Keywords_Type : AbstractObject_Type
+    {
+
+        private MD_Keyword[] keywordField;
+
+		[System.Xml.Serialization.XmlElementAttribute("keyword")]
+        public MD_Keyword[] keyword
+        {
+            get
+            {
+                return this.keywordField;
+            }
+            set
+            {
+                this.keywordField = value;
+            }
+        }
+
+		...
+
+    public partial class MD_Keyword : IXmlSerializable
+    {
+        private object keywordField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object keyword
+        {
+            get
+            {
+                return this.keywordField;
+            }
+            set
+            {
+                this.keywordField = value;
+            }
+        }
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            System.Collections.Generic.List<object> keywords = new System.Collections.Generic.List<object>();
+
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var keywordList = doc.SelectNodes("//gmd:keyword", ns);
+
+            foreach (XmlNode item in keywordList)
+            {
+                var anchor = item.SelectSingleNode("//gmd:keyword/gmx:Anchor", ns);
+
+                XmlElement parentNode = item.ParentNode as XmlElement;
+
+                if ((parentNode != null) && parentNode.HasAttribute("xsi:type") 
+                    && parentNode.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
+                {
+                    string keywordString = "";
+                    string keywordEnglish = "";
+                    var keywordNode = doc.SelectSingleNode("//gmd:keyword/gco:CharacterString", ns);
+                    if (keywordNode != null)
+                        keywordString = keywordNode.InnerText;
+                    var keywordEnglishNode = doc.SelectSingleNode("//gmd:keyword/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", ns);
+                    if (keywordEnglishNode != null)
+                        keywordEnglish = keywordEnglishNode.InnerText;
+                    keyword = CreateFreeTextElement(keywordString, keywordEnglish);
+                }
+
+                else if (anchor != null)
+                {
+                    string keyWordString = anchor.InnerText;
+                    string keyWordLink = "";
+                    var keyWordsLinkNode = anchor.SelectSingleNode("//gmd:keyword/gmx:Anchor/@xlink:href", ns);
+                    if (keyWordsLinkNode != null)
+                        keyWordLink = keyWordsLinkNode.InnerText;
+
+                    keywords.Add(new Anchor_Type { Value = keyWordString, href = keyWordLink });
+                }
+                else
+                {
+                    string keyWordString = "";
+                    var keyWordNode = item.SelectSingleNode("//gmd:keyword/gco:CharacterString", ns);
+                    if (keyWordNode != null)
+                        keyWordString = keyWordNode.InnerText;
+
+                    keywords.Add(new CharacterString_PropertyType { CharacterString = keyWordString });
+                }
+            }
+
+            keyword = keywords.ToArray();
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            if (this.keywordField.GetType() == typeof(PT_FreeText_PropertyType))
+            {
+                PT_FreeText_PropertyType charString = this.keywordField as PT_FreeText_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteAttributeString("locale", "#ENG");
+                    writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+            }
+            else if (this.keywordField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.keywordField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.keywordField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.keywordField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
+            }
+
+        }
+        public string GetEnglishValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#ENG"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElement(string characterString, string englishLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#ENG",
+                                     Value = englishLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
+        }
+    }
