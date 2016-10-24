@@ -19931,8 +19931,6 @@ namespace www.opengis.net
 
         public void ReadXml(System.Xml.XmlReader reader)
         {
-            System.Collections.Generic.List<object> keywords = new System.Collections.Generic.List<object>();
-
             var data = reader.ReadOuterXml();
 
             XmlDocument doc = new XmlDocument();
@@ -19943,13 +19941,9 @@ namespace www.opengis.net
             ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
             doc.LoadXml(data);
 
-            var keywordList = doc.SelectNodes("//gmd:keyword", ns);
+                var anchor = doc.SelectSingleNode("//gmd:keyword/gmx:Anchor", ns);
 
-            foreach (XmlNode item in keywordList)
-            {
-                var anchor = item.SelectSingleNode("//gmd:keyword/gmx:Anchor", ns);
-
-                XmlElement parentNode = item.ParentNode as XmlElement;
+                XmlElement parentNode = doc.ParentNode as XmlElement;
 
                 if ((parentNode != null) && parentNode.HasAttribute("xsi:type") 
                     && parentNode.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
@@ -19962,6 +19956,7 @@ namespace www.opengis.net
                     var keywordEnglishNode = doc.SelectSingleNode("//gmd:keyword/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", ns);
                     if (keywordEnglishNode != null)
                         keywordEnglish = keywordEnglishNode.InnerText;
+
                     keyword = CreateFreeTextElement(keywordString, keywordEnglish);
                 }
 
@@ -19973,20 +19968,17 @@ namespace www.opengis.net
                     if (keyWordsLinkNode != null)
                         keyWordLink = keyWordsLinkNode.InnerText;
 
-                    keywords.Add(new Anchor_Type { Value = keyWordString, href = keyWordLink });
+                    keyword = new Anchor_Type { Value = keyWordString, href = keyWordLink };
                 }
                 else
                 {
                     string keyWordString = "";
-                    var keyWordNode = item.SelectSingleNode("//gmd:keyword/gco:CharacterString", ns);
+                    var keyWordNode = doc.SelectSingleNode("//gmd:keyword/gco:CharacterString", ns);
                     if (keyWordNode != null)
                         keyWordString = keyWordNode.InnerText;
 
-                    keywords.Add(new CharacterString_PropertyType { CharacterString = keyWordString });
+                    keyword = new CharacterString_PropertyType { CharacterString = keyWordString };
                 }
-            }
-
-            keyword = keywords.ToArray();
         }
 
         public void WriteXml(System.Xml.XmlWriter writer)
