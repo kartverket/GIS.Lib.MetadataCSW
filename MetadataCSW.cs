@@ -16871,7 +16871,7 @@ namespace www.opengis.net
     public partial class CI_Citation_Type : AbstractObject_Type
     {
 
-        private CharacterString_PropertyType titleField;
+        private CI_Citation_Title titleField;
 
         private CharacterString_PropertyType[] alternateTitleField;
 
@@ -16898,7 +16898,7 @@ namespace www.opengis.net
         private CharacterString_PropertyType iSSNField;
 
         /// <remarks/>
-        public CharacterString_PropertyType title
+        public CI_Citation_Title title
         {
             get
             {
@@ -17070,6 +17070,166 @@ namespace www.opengis.net
                 this.iSSNField = value;
             }
         }
+    }
+
+    public partial class CI_Citation_Title : IXmlSerializable
+    {
+        private object itemField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object item
+        {
+            get
+            {
+                return this.itemField;
+            }
+            set
+            {
+                this.itemField = value;
+            }
+        }
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var anchorElement = doc.SelectSingleNode("//gmd:title/gmx:Anchor", ns);
+
+            XmlElement node = doc.DocumentElement as XmlElement;
+
+            if ((node != null) && node.HasAttribute("xsi:type")
+                && node.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
+            {
+                string titleString = "";
+                string titleEnglish = "";
+                var titleNode = doc.SelectSingleNode("//gmd:title/gco:CharacterString", ns);
+                if (titleNode != null)
+                    titleString = titleNode.InnerText;
+                var titleEnglishNode = doc.SelectSingleNode("//gmd:title/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", ns);
+                if (titleEnglishNode != null)
+                    titleEnglish = titleEnglishNode.InnerText;
+
+                 item = CreateFreeTextElement(titleString, titleEnglish);
+            }
+            else if (anchorElement != null)
+            {
+                string titleString = anchorElement.InnerText;
+                string titleLink = "";
+                var titleLinkNode = anchorElement.SelectSingleNode("//gmd:title/gmx:Anchor/@xlink:href", ns);
+                if (titleLinkNode != null)
+                    titleLink = titleLinkNode.InnerText;
+
+                item = new Anchor_Type { Value = titleString, href = titleLink };
+            }
+            else
+            {
+                string titleString = "";
+                var titleNode = doc.SelectSingleNode("//gmd:title/gco:CharacterString", ns);
+                if (titleNode != null)
+                    titleString = titleNode.InnerText;
+
+                item = new CharacterString_PropertyType { CharacterString = titleString };
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+
+            if (this.itemField.GetType() == typeof(PT_FreeText_PropertyType))
+            {
+                PT_FreeText_PropertyType charString = this.itemField as PT_FreeText_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteAttributeString("locale", "#ENG");
+                    writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+            }
+            else if(this.itemField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.itemField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.itemField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.itemField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
+            }
+
+        }
+
+        public string GetEnglishValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#ENG"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElement(string characterString, string englishLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#ENG",
+                                     Value = englishLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
+        }
+
     }
 
     /// <remarks/>
