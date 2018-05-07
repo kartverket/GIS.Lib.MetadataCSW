@@ -49842,7 +49842,7 @@ namespace www.opengis.net
             else if (this.mD_RestrictionOtherField.GetType() == typeof(CharacterString_PropertyType))
             {
                 CharacterString_PropertyType charString = this.mD_RestrictionOtherField as CharacterString_PropertyType;
-                if (charString != null)
+                if (charString != null && !string.IsNullOrEmpty(charString.CharacterString))
                 {
                     writer.WriteElementString("gco:CharacterString", charString.CharacterString);
                 }
