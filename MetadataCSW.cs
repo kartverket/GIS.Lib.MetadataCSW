@@ -49816,6 +49816,8 @@ namespace www.opengis.net
 
                 MD_RestrictionOther = new CharacterString_PropertyType { CharacterString = otherConstraints };
             }
+            else
+                MD_RestrictionOther = new object();
 
         }
 
