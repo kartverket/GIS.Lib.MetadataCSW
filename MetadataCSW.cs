@@ -10099,12 +10099,12 @@ namespace www.opengis.net
     public partial class Boolean_PropertyType
     {
 
-        private bool booleanField;
+        private bool? booleanField;
 
         private string nilReasonField;
 
         /// <remarks/>
-        public bool Boolean
+        public bool? Boolean
         {
             get
             {
@@ -10114,6 +10114,11 @@ namespace www.opengis.net
             {
                 this.booleanField = value;
             }
+        }
+
+        public bool ShouldSerializeBoolean()
+        {
+            return Boolean.HasValue;
         }
 
         /// <remarks/>
