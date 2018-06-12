@@ -931,3 +931,31 @@ public enum GenericNameItemChoiceType {
         }
 
     }
+
+# Handle nullable boolean
+
+public partial class Boolean_PropertyType
+    {
+
+        private bool? booleanField;
+
+        private string nilReasonField;
+
+        /// <remarks/>
+        public bool? Boolean
+        {
+            get
+            {
+                return this.booleanField;
+            }
+            set
+            {
+                this.booleanField = value;
+            }
+        }
+
+        public bool ShouldSerializeBoolean()
+        {
+            return Boolean.HasValue;
+        }
+		......
