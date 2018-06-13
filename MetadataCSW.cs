@@ -12604,7 +12604,7 @@ namespace www.opengis.net
 
         private CharacterString_PropertyType nameField;
 
-        private CharacterString_PropertyType descriptionField;
+        private Description_Type descriptionField;
 
         private CI_OnLineFunctionCode_PropertyType functionField;
 
@@ -12661,7 +12661,7 @@ namespace www.opengis.net
         }
 
         /// <remarks/>
-        public CharacterString_PropertyType description
+        public Description_Type description
         {
             get
             {
@@ -12685,6 +12685,28 @@ namespace www.opengis.net
                 this.functionField = value;
             }
         }
+
+        [System.SerializableAttribute()]
+        [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmd")]
+        [System.Xml.Serialization.XmlRootAttribute("Description", Namespace = "http://www.isotc211.org/2005/gmd")]
+        public partial class Description_Type
+        {
+            private Anchor_Type descriptionField;
+
+            [System.Xml.Serialization.XmlElement("Anchor", Namespace = "http://www.isotc211.org/2005/gmx")]
+            public Anchor_Type description
+            {
+                get
+                {
+                    return this.descriptionField;
+                }
+                set
+                {
+                    this.descriptionField = value;
+                }
+            }
+        }
+
     }
 
     /// <remarks/>
@@ -49686,7 +49708,7 @@ namespace www.opengis.net
 
         public Anchor_Type()
         {
-            this.typeField = "simple";
+            //this.typeField = "simple";
         }
 
         /// <remarks/>
