@@ -1081,3 +1081,71 @@ public partial class Boolean_PropertyType
         }
 
     }
+
+-----------------------
+    public partial class CI_Citation_PropertyType
+    {
+
+        private CI_Citation_Type cI_CitationField;
+
+        private string uuidrefField;
+
+        private string nilReasonField;
+
+        private string hrefField;
+
+        /// <remarks/>
+        public CI_Citation_Type CI_Citation
+        {
+            get
+            {
+                return this.cI_CitationField;
+            }
+            set
+            {
+                this.cI_CitationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string uuidref
+        {
+            get
+            {
+                return this.uuidrefField;
+            }
+            set
+            {
+                this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
+            }
+        }
+
+    public partial class Anchor_Type
+	....
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
+        public string title
+        {
+            get
+            {
+                return this.titleField;
+            }
+            set
+            {
+                this.titleField = value;
+            }
+        }
