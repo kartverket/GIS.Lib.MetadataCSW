@@ -16846,6 +16846,8 @@ namespace www.opengis.net
 
         private string nilReasonField;
 
+        private string hrefField;
+
         /// <remarks/>
         public CI_Citation_Type CI_Citation
         {
@@ -16870,6 +16872,20 @@ namespace www.opengis.net
             set
             {
                 this.uuidrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
             }
         }
 
@@ -17208,6 +17224,7 @@ namespace www.opengis.net
                 {
                     writer.WriteStartElement("gmx:Anchor");
                     writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteAttributeString("xlink:title", anchor.title);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
@@ -49706,6 +49723,8 @@ namespace www.opengis.net
 
         private string valueField;
 
+        private string titleField;
+
         public Anchor_Type()
         {
             //this.typeField = "simple";
@@ -49736,6 +49755,20 @@ namespace www.opengis.net
             set
             {
                 this.hrefField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink")]
+        public string title
+        {
+            get
+            {
+                return this.titleField;
+            }
+            set
+            {
+                this.titleField = value;
             }
         }
 
