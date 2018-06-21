@@ -17224,7 +17224,8 @@ namespace www.opengis.net
                 {
                     writer.WriteStartElement("gmx:Anchor");
                     writer.WriteAttributeString("xlink:href", anchor.href);
-                    writer.WriteAttributeString("xlink:title", anchor.title);
+                    if(!string.IsNullOrEmpty(anchor.title))
+                        writer.WriteAttributeString("xlink:title", anchor.title);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
