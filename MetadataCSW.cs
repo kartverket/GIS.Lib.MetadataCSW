@@ -11268,6 +11268,38 @@ namespace www.opengis.net
         }
     }
 
+
+    /// <remarks/>
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.w3.org/2001/XMLSchema")]
+    public partial class integer
+    {
+
+        private string valueField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute(DataType = "integer")]
+        public string Value
+        {
+            get
+            {
+                return this.valueField;
+            }
+            set
+            {
+                this.valueField = value;
+            }
+        }
+
+        public override string ToString()
+        {
+            return Value;
+        }
+    }
+
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
@@ -16790,6 +16822,7 @@ namespace www.opengis.net
         private string nilReasonField;
 
         /// <remarks/>
+        [System.Xml.Serialization.XmlElement(Namespace = "http://www.w3.org/2001/XMLSchema")]
         public object Record
         {
             get
@@ -22466,7 +22499,7 @@ namespace www.opengis.net
     public abstract partial class AbstractDQ_Element_Type : AbstractObject_Type
     {
 
-        private CharacterString_PropertyType[] nameOfMeasureField;
+        private Measure_Type[] nameOfMeasureField;
 
         private MD_Identifier_PropertyType measureIdentificationField;
 
@@ -22484,7 +22517,7 @@ namespace www.opengis.net
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("nameOfMeasure")]
-        public CharacterString_PropertyType[] nameOfMeasure
+        public Measure_Type[] nameOfMeasure
         {
             get
             {
@@ -22586,6 +22619,27 @@ namespace www.opengis.net
             set
             {
                 this.resultField = value;
+            }
+        }
+    }
+
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmd")]
+    [System.Xml.Serialization.XmlRootAttribute("nameOfMeasure", Namespace = "http://www.isotc211.org/2005/gmd")]
+    public partial class Measure_Type
+    {
+        private Anchor_Type typeField;
+
+        [System.Xml.Serialization.XmlElement("Anchor", Namespace = "http://www.isotc211.org/2005/gmx")]
+        public Anchor_Type type
+        {
+            get
+            {
+                return this.typeField;
+            }
+            set
+            {
+                this.typeField = value;
             }
         }
     }
@@ -22778,6 +22832,7 @@ namespace www.opengis.net
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(integer))]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gco")]
     public partial class RecordType_PropertyType
     {
@@ -23048,6 +23103,8 @@ namespace www.opengis.net
 
         private string nilReasonField;
 
+        private string hrefField;
+
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.opengis.net/gml")]
         public UnitDefinitionType UnitDefinition
@@ -23087,6 +23144,20 @@ namespace www.opengis.net
             set
             {
                 this.nilReasonField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute(Form = System.Xml.Schema.XmlSchemaForm.Qualified, Namespace = "http://www.w3.org/1999/xlink", DataType = "anyURI")]
+        public string href
+        {
+            get
+            {
+                return this.hrefField;
+            }
+            set
+            {
+                this.hrefField = value;
             }
         }
     }
