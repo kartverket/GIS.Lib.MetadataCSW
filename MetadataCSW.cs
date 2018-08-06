@@ -24444,7 +24444,7 @@ namespace www.opengis.net
 
         private MD_Resolution_PropertyType[] spatialResolutionField;
 
-        private CharacterString_PropertyType[] languageField;
+        private LanguageCode_PropertyType[] languageField;
 
         private MD_CharacterSetCode_PropertyType[] characterSetField;
 
@@ -24486,7 +24486,7 @@ namespace www.opengis.net
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("language")]
-        public CharacterString_PropertyType[] language
+        public LanguageCode_PropertyType[] language
         {
             get
             {
