@@ -17520,7 +17520,7 @@ namespace www.opengis.net
 
         private CI_Citation_PropertyType authorityField;
 
-        private CharacterString_PropertyType codeField;
+        private Anchor_PropertyType codeField;
 
         /// <remarks/>
         public CI_Citation_PropertyType authority
@@ -17536,7 +17536,7 @@ namespace www.opengis.net
         }
 
         /// <remarks/>
-        public CharacterString_PropertyType code
+        public Anchor_PropertyType code
         {
             get
             {
@@ -17545,6 +17545,88 @@ namespace www.opengis.net
             set
             {
                 this.codeField = value;
+            }
+        }
+    }
+
+    public partial class Anchor_PropertyType : IXmlSerializable
+    {
+        private object anchorField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object anchor
+        {
+            get
+            {
+                return this.anchorField;
+            }
+            set
+            {
+                this.anchorField = value;
+            }
+        }
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var anchorNode = doc.SelectSingleNode("//gmx:Anchor", ns);
+
+            if (anchorNode != null)
+            {
+                string anchorString = anchorNode.InnerText;
+                string anchorLink = "";
+                var anchorLinkNode = anchorNode.SelectSingleNode("//gmx:Anchor/@xlink:href", ns);
+                if (anchorLinkNode != null)
+                    anchorLink = anchorLinkNode.InnerText;
+
+                anchor = new Anchor_Type { Value = anchorString, href = anchorLink };
+            }
+            else
+            {
+                string characterString = "";
+                var characterStringNode = doc.SelectSingleNode("//gco:CharacterString", ns);
+                if (characterStringNode != null)
+                    characterString = characterStringNode.InnerText;
+
+                anchor = new CharacterString_PropertyType { CharacterString = characterString };
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            if (this.anchorField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.anchorField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.anchorField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.anchorField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
             }
         }
     }
