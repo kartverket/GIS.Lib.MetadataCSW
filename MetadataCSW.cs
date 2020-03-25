@@ -11536,7 +11536,7 @@ namespace www.opengis.net
                     codeList = codeListNode.InnerText;
 
                 item = new LanguageCode_PropertyType
-                { LanguageCode = new CodeListValue_Type { codeList = "", codeListValue = codeListValue, Value = languageString } };
+                { LanguageCode = new CodeListValue_Type { codeList = codeList, codeListValue = codeListValue, Value = languageString } };
             }
             else
             {
