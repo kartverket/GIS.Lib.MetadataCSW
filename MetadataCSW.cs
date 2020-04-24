@@ -14,6 +14,7 @@
 namespace www.opengis.net
 {
     using System.Xml;
+    using System.Xml.Schema;
     using System.Xml.Serialization;
 
 
@@ -11484,6 +11485,95 @@ namespace www.opengis.net
         }
     }
 
+    public partial class Language_PropertyType : IXmlSerializable
+    {
+        private object languageField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("LanguageCode", typeof(LanguageCode_PropertyType), Namespace = "http://www.isotc211.org/2005/gmd")]
+        public object item
+        {
+            get
+            {
+                return this.languageField;
+            }
+            set
+            {
+                this.languageField = value;
+            }
+        }
+
+        public XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var languageCodeNode = doc.SelectSingleNode("//gmd:LanguageCode", ns);
+
+            if (languageCodeNode != null)
+            {
+                string languageString = languageCodeNode.InnerText;
+                string codeListValue = "";
+                var codeListValueNode = languageCodeNode.SelectSingleNode("//gmd:LanguageCode/@codeListValue", ns);
+                if (codeListValueNode != null)
+                    codeListValue = codeListValueNode.InnerText;
+
+                string codeList = "";
+                var codeListNode = languageCodeNode.SelectSingleNode("//gmd:LanguageCode/@codeList", ns);
+                if (codeListNode != null)
+                    codeList = codeListNode.InnerText;
+
+                item = new LanguageCode_PropertyType
+                { LanguageCode = new CodeListValue_Type { codeList = codeList, codeListValue = codeListValue, Value = languageString } };
+            }
+            else
+            {
+                string characterString = "";
+                var characterStringNode = doc.SelectSingleNode("//gco:CharacterString", ns);
+                if (characterStringNode != null)
+                    characterString = characterStringNode.InnerText;
+
+                item = new CharacterString_PropertyType { CharacterString = characterString };
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            if (this.item.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.item as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.item.GetType() == typeof(LanguageCode_PropertyType))
+            {
+                LanguageCode_PropertyType item = this.item as LanguageCode_PropertyType;
+                if (item != null)
+                {
+                    writer.WriteStartElement("gmd:LanguageCode");
+                    writer.WriteAttributeString("codeList", item.LanguageCode.codeList);
+                    writer.WriteAttributeString("codeListValue", item.LanguageCode.codeListValue);
+                    writer.WriteString(item.LanguageCode.Value);
+                    writer.WriteEndElement();
+                }
+            }
+        }
+    }
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]
     [System.SerializableAttribute()]
@@ -11496,7 +11586,7 @@ namespace www.opengis.net
 
         private CharacterString_PropertyType fileIdentifierField;
 
-        private CharacterString_PropertyType languageField;
+        private Language_PropertyType languageField;
 
         private MD_CharacterSetCode_PropertyType characterSetField;
 
@@ -11564,7 +11654,7 @@ namespace www.opengis.net
         }
 
         /// <remarks/>
-        public CharacterString_PropertyType language
+        public Language_PropertyType language
         {
             get
             {
@@ -17520,7 +17610,7 @@ namespace www.opengis.net
 
         private CI_Citation_PropertyType authorityField;
 
-        private CharacterString_PropertyType codeField;
+        private Anchor_PropertyType codeField;
 
         /// <remarks/>
         public CI_Citation_PropertyType authority
@@ -17536,7 +17626,7 @@ namespace www.opengis.net
         }
 
         /// <remarks/>
-        public CharacterString_PropertyType code
+        public Anchor_PropertyType code
         {
             get
             {
@@ -17545,6 +17635,88 @@ namespace www.opengis.net
             set
             {
                 this.codeField = value;
+            }
+        }
+    }
+
+    public partial class Anchor_PropertyType : IXmlSerializable
+    {
+        private object anchorField;
+
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object anchor
+        {
+            get
+            {
+                return this.anchorField;
+            }
+            set
+            {
+                this.anchorField = value;
+            }
+        }
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var anchorNode = doc.SelectSingleNode("//gmx:Anchor", ns);
+
+            if (anchorNode != null)
+            {
+                string anchorString = anchorNode.InnerText;
+                string anchorLink = "";
+                var anchorLinkNode = anchorNode.SelectSingleNode("//gmx:Anchor/@xlink:href", ns);
+                if (anchorLinkNode != null)
+                    anchorLink = anchorLinkNode.InnerText;
+
+                anchor = new Anchor_Type { Value = anchorString, href = anchorLink };
+            }
+            else
+            {
+                string characterString = "";
+                var characterStringNode = doc.SelectSingleNode("//gco:CharacterString", ns);
+                if (characterStringNode != null)
+                    characterString = characterStringNode.InnerText;
+
+                anchor = new CharacterString_PropertyType { CharacterString = characterString };
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            if (this.anchorField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.anchorField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.anchorField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.anchorField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
             }
         }
     }
