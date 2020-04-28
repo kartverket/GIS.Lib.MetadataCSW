@@ -16912,7 +16912,6 @@ namespace www.opengis.net
         private string nilReasonField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElement(Namespace = "http://www.w3.org/2001/XMLSchema")]
         public object Record
         {
             get
