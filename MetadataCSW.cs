@@ -17431,7 +17431,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#locale-nor"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
