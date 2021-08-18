@@ -17311,7 +17311,7 @@ namespace www.opengis.net
                     titleEnglish = titleEnglishNode.InnerText;
 
                 string titleNorwegian = "";
-                var titleNorwegianNode = doc.SelectSingleNode("//gmd:title/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", ns);
+                var titleNorwegianNode = doc.SelectSingleNode("//gmd:title/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NOR']", ns);
                 if (titleNorwegianNode != null)
                     titleNorwegian = titleNorwegianNode.InnerText;
 
@@ -17363,7 +17363,7 @@ namespace www.opengis.net
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
                     writer.WriteAttributeString("locale", locale);
-                    if(locale == "#locale-nor")
+                    if(locale == "#NOR")
                         writer.WriteValue(GetNorwegianValueFromFreeText(charString));
                     else
                         writer.WriteValue(GetEnglishValueFromFreeText(charString));
@@ -17431,7 +17431,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#NOR"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
@@ -17471,7 +17471,7 @@ namespace www.opengis.net
                     textGroup = new LocalisedCharacterString_PropertyType[] {
                             new LocalisedCharacterString_PropertyType {
                                 LocalisedCharacterString = new LocalisedCharacterString_Type {
-                                     locale = "#locale-nor",
+                                     locale = "#NOR",
                                      Value = norwegianLocalizedValue
                                 }
                             }
