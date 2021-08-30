@@ -50295,13 +50295,22 @@ namespace www.opengis.net
                 doc.LoadXml(data);
                 string otherConstraints = "";
                 string otherConstraintsEnglish = "";
+                string otherConstraintsNorwegian = "";
                 var otherConstraintsNode = doc.SelectSingleNode("//gmd:otherConstraints/gco:CharacterString", nsmgr);
                 if (otherConstraintsNode != null)
                     otherConstraints = otherConstraintsNode.InnerText;
                 var otherConstraintsEnglishNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", nsmgr);
                 if (otherConstraintsEnglishNode != null)
                     otherConstraintsEnglish = otherConstraintsEnglishNode.InnerText;
-                MD_RestrictionOther = CreateFreeTextElement(otherConstraints, otherConstraintsEnglish);
+
+                var otherConstraintsNorwegianNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NOR']", nsmgr);
+                if (otherConstraintsNorwegianNode != null)
+                    otherConstraintsNorwegian = otherConstraintsNorwegianNode.InnerText;
+
+                if(!string.IsNullOrEmpty(otherConstraintsNorwegian))
+                    MD_RestrictionOther = CreateFreeTextElementNorwegian(otherConstraints, otherConstraintsNorwegian);
+                else
+                    MD_RestrictionOther = CreateFreeTextElement(otherConstraints, otherConstraintsEnglish);
 
             }
             else if (data.Contains("gmx:Anchor"))
@@ -50350,13 +50359,24 @@ namespace www.opengis.net
                 PT_FreeText_PropertyType charString = this.mD_RestrictionOtherField as PT_FreeText_PropertyType;
                 if (charString != null)
                 {
+                    string locale = "#ENG";
+
+                    if (charString.PT_FreeText != null && charString.PT_FreeText.textGroup != null
+                        && charString.PT_FreeText.textGroup.Length > 0
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString != null
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
+                        locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
+
                     writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
                     writer.WriteElementString("gco:CharacterString", charString.CharacterString);
                     writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
-                    writer.WriteAttributeString("locale", "#ENG");
-                    writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteAttributeString("locale", locale);
+                    if (locale == "#NOR")
+                        writer.WriteValue(GetNorwegianValueFromFreeText(charString));
+                    else
+                        writer.WriteValue(GetEnglishValueFromFreeText(charString));
                     writer.WriteEndElement();
                     writer.WriteEndElement();
                     writer.WriteEndElement();
@@ -50382,6 +50402,29 @@ namespace www.opengis.net
                 }
             }
 
+        }
+
+        public string GetNorwegianValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#NOR"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
         }
 
         public string GetEnglishValueFromFreeText(CharacterString_PropertyType input)
@@ -50419,6 +50462,25 @@ namespace www.opengis.net
                                 LocalisedCharacterString = new LocalisedCharacterString_Type {
                                      locale = "#ENG",
                                      Value = englishLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElementNorwegian(string characterString, string norwegianLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#NOR",
+                                     Value = norwegianLocalizedValue
                                 }
                             }
                         }
