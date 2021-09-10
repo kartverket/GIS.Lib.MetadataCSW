@@ -20660,7 +20660,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#NOR"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#NOR"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
@@ -50416,7 +50416,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#NOR"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#NOR"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
