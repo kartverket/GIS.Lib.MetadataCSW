@@ -17311,7 +17311,7 @@ namespace www.opengis.net
                     titleEnglish = titleEnglishNode.InnerText;
 
                 string titleNorwegian = "";
-                var titleNorwegianNode = doc.SelectSingleNode("//gmd:title/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NOR']", ns);
+                var titleNorwegianNode = doc.SelectSingleNode("//gmd:title/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", ns);
                 if (titleNorwegianNode != null)
                     titleNorwegian = titleNorwegianNode.InnerText;
 
@@ -17363,7 +17363,7 @@ namespace www.opengis.net
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
                     writer.WriteAttributeString("locale", locale);
-                    if(locale == "#NOR")
+                    if(locale == "#locale-nor")
                         writer.WriteValue(GetNorwegianValueFromFreeText(charString));
                     else
                         writer.WriteValue(GetEnglishValueFromFreeText(charString));
@@ -17431,7 +17431,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#NOR"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
@@ -17471,7 +17471,7 @@ namespace www.opengis.net
                     textGroup = new LocalisedCharacterString_PropertyType[] {
                             new LocalisedCharacterString_PropertyType {
                                 LocalisedCharacterString = new LocalisedCharacterString_Type {
-                                     locale = "#NOR",
+                                     locale = "#locale-nor",
                                      Value = norwegianLocalizedValue
                                 }
                             }
@@ -20524,7 +20524,7 @@ namespace www.opengis.net
                     keywordEnglish = keywordEnglishNode.InnerText;
 
                 string keywordNorwegian = "";
-                var keywordNorwegianNode = doc.SelectSingleNode("//gmd:keyword/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NOR']", ns);
+                var keywordNorwegianNode = doc.SelectSingleNode("//gmd:keyword/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", ns);
                 if (keywordNorwegianNode != null)
                     keywordNorwegian = keywordNorwegianNode.InnerText;
 
@@ -20577,7 +20577,7 @@ namespace www.opengis.net
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
                     writer.WriteAttributeString("locale", locale);
-                    if (locale == "#NOR")
+                    if (locale == "#locale-nor")
                         writer.WriteValue(GetNorwegianValueFromFreeText(charString));
                     else
                         writer.WriteValue(GetEnglishValueFromFreeText(charString));
@@ -20640,7 +20640,7 @@ namespace www.opengis.net
                     textGroup = new LocalisedCharacterString_PropertyType[] {
                             new LocalisedCharacterString_PropertyType {
                                 LocalisedCharacterString = new LocalisedCharacterString_Type {
-                                     locale = "#NOR",
+                                     locale = "#locale-nor",
                                      Value = norwegianLocalizedValue
                                 }
                             }
@@ -20660,7 +20660,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#NOR"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
@@ -50303,7 +50303,7 @@ namespace www.opengis.net
                 if (otherConstraintsEnglishNode != null)
                     otherConstraintsEnglish = otherConstraintsEnglishNode.InnerText;
 
-                var otherConstraintsNorwegianNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NOR']", nsmgr);
+                var otherConstraintsNorwegianNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", nsmgr);
                 if (otherConstraintsNorwegianNode != null)
                     otherConstraintsNorwegian = otherConstraintsNorwegianNode.InnerText;
 
@@ -50373,7 +50373,7 @@ namespace www.opengis.net
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
                     writer.WriteAttributeString("locale", locale);
-                    if (locale == "#NOR")
+                    if (locale == "#locale-nor")
                         writer.WriteValue(GetNorwegianValueFromFreeText(charString));
                     else
                         writer.WriteValue(GetEnglishValueFromFreeText(charString));
@@ -50416,7 +50416,7 @@ namespace www.opengis.net
                     {
                         if (localizedStringProperty.LocalisedCharacterString != null
                             && localizedStringProperty.LocalisedCharacterString.locale != null
-                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#NOR"))
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
                         {
                             value = localizedStringProperty.LocalisedCharacterString.Value;
                             break;
@@ -50479,7 +50479,7 @@ namespace www.opengis.net
                     textGroup = new LocalisedCharacterString_PropertyType[] {
                             new LocalisedCharacterString_PropertyType {
                                 LocalisedCharacterString = new LocalisedCharacterString_Type {
-                                     locale = "#NOR",
+                                     locale = "#locale-nor",
                                      Value = norwegianLocalizedValue
                                 }
                             }
