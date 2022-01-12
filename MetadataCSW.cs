@@ -10105,7 +10105,6 @@ namespace www.opengis.net
         private string nilReasonField;
 
         /// <remarks/>
-        [XmlIgnore]
         public bool? Boolean
         {
             get
@@ -10121,27 +10120,6 @@ namespace www.opengis.net
         public bool ShouldSerializeBoolean()
         {
             return Boolean.HasValue;
-        }
-
-        [XmlAttribute("Boolean")]
-        public bool XmlBoolean
-        {
-            get
-            {
-                return this.booleanField.Value;
-            }
-            set
-            {
-                this.booleanField = value;
-            }
-        }
-
-        public bool XmlBooleanSpecified
-        {
-            get
-            {
-                return this.booleanField.HasValue;
-            }
         }
 
         /// <remarks/>
