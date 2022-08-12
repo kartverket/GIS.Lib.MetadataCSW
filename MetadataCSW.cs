@@ -25303,6 +25303,7 @@ namespace www.opengis.net
 
         [XmlElement(Type = typeof(MD_FeatureCatalogueDescription_Type), ElementName = "MD_FeatureCatalogueDescription", Namespace = "http://www.isotc211.org/2005/gmd")]
         [XmlElement(Type = typeof(MD_CoverageDescription_Type), ElementName = "MD_CoverageDescription", Namespace = "http://www.isotc211.org/2005/gmd")]
+        [XmlElement(Type = typeof(MD_ImageDescription_Type), ElementName = "MD_ImageDescription", Namespace = "http://www.isotc211.org/2005/gmd")]
         public AbstractMD_ContentInformation_Type AbstractMD_ContentInformation
         {
             get
