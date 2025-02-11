@@ -23200,15 +23200,13 @@ namespace www.opengis.net
         }
     }
 
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.isotc211.org/2005/gmd")]
-    [System.Xml.Serialization.XmlRootAttribute("nameOfMeasure", Namespace = "http://www.isotc211.org/2005/gmd")]
-    public partial class Measure_Type
+    public partial class Measure_Type : IXmlSerializable
     {
-        private Anchor_Type typeField;
+        private object typeField;
 
-        [System.Xml.Serialization.XmlElement("Anchor", Namespace = "http://www.isotc211.org/2005/gmx")]
-        public Anchor_Type type
+        [System.Xml.Serialization.XmlElementAttribute("CharacterString", Type = typeof(CharacterString_PropertyType), Namespace = "http://www.isotc211.org/2005/gco")]
+        [System.Xml.Serialization.XmlElementAttribute("Anchor", typeof(Anchor_Type), Namespace = "http://www.isotc211.org/2005/gmx")]
+        public object type
         {
             get
             {
@@ -23218,6 +23216,210 @@ namespace www.opengis.net
             {
                 this.typeField = value;
             }
+        }
+
+        public System.Xml.Schema.XmlSchema GetSchema()
+        {
+            return null;
+        }
+
+        public void ReadXml(System.Xml.XmlReader reader)
+        {
+            var data = reader.ReadOuterXml();
+
+            XmlDocument doc = new XmlDocument();
+            var ns = new XmlNamespaceManager(doc.NameTable);
+            ns.AddNamespace("gmd", "http://www.isotc211.org/2005/gmd");
+            ns.AddNamespace("gmx", "http://www.isotc211.org/2005/gmx");
+            ns.AddNamespace("xlink", "http://www.w3.org/1999/xlink");
+            ns.AddNamespace("gco", "http://www.isotc211.org/2005/gco");
+            doc.LoadXml(data);
+
+            var anchor = doc.SelectSingleNode("//gmd:nameOfMeasure/gmx:Anchor", ns);
+
+            XmlElement node = doc.DocumentElement as XmlElement;
+
+            if (anchor != null)
+            {
+                string nameOfMeasureString = anchor.InnerText;
+                string nameOfMeasureLink = "";
+                var nameOfMeasuresLinkNode = anchor.SelectSingleNode("//gmd:nameOfMeasure/gmx:Anchor/@xlink:href", ns);
+                if (nameOfMeasuresLinkNode != null)
+                    nameOfMeasureLink = nameOfMeasuresLinkNode.InnerText;
+
+                type = new Anchor_Type { Value = nameOfMeasureString, href = nameOfMeasureLink };
+            }
+
+            else if ((node != null) && node.HasAttribute("xsi:type")
+                && node.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
+            {
+                string nameOfMeasureString = "";
+                string nameOfMeasureEnglish = "";
+                var nameOfMeasureNode = doc.SelectSingleNode("//gmd:nameOfMeasure/gco:CharacterString", ns);
+                if (nameOfMeasureNode != null)
+                    nameOfMeasureString = nameOfMeasureNode.InnerText;
+                var nameOfMeasureEnglishNode = doc.SelectSingleNode("//gmd:nameOfMeasure/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#ENG']", ns);
+                if (nameOfMeasureEnglishNode != null)
+                    nameOfMeasureEnglish = nameOfMeasureEnglishNode.InnerText;
+
+                string nameOfMeasureNorwegian = "";
+                var nameOfMeasureNorwegianNode = doc.SelectSingleNode("//gmd:nameOfMeasure/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", ns);
+
+                if (nameOfMeasureNorwegianNode == null)
+                    nameOfMeasureNorwegianNode = doc.SelectSingleNode("//gmd:nameOfMeasure/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NO']", ns);
+
+                if (nameOfMeasureNorwegianNode != null)
+                    nameOfMeasureNorwegian = nameOfMeasureNorwegianNode.InnerText;
+
+                if (!string.IsNullOrEmpty(nameOfMeasureNorwegian))
+                    type = CreateFreeTextElementNorwegian(nameOfMeasureString, nameOfMeasureNorwegian);
+                else
+
+                    type = CreateFreeTextElement(nameOfMeasureString, nameOfMeasureEnglish);
+            }
+            else
+            {
+                string nameOfMeasureString = "";
+                var nameOfMeasureNode = doc.SelectSingleNode("//gmd:nameOfMeasure/gco:CharacterString", ns);
+                if (nameOfMeasureNode != null)
+                    nameOfMeasureString = nameOfMeasureNode.InnerText;
+
+                type = new CharacterString_PropertyType { CharacterString = nameOfMeasureString };
+            }
+        }
+
+        public void WriteXml(System.Xml.XmlWriter writer)
+        {
+            if (this.typeField.GetType() == typeof(PT_FreeText_PropertyType))
+            {
+                PT_FreeText_PropertyType charString = this.typeField as PT_FreeText_PropertyType;
+                if (charString != null)
+                {
+                    string locale = "#ENG";
+
+                    if (charString.PT_FreeText != null && charString.PT_FreeText.textGroup != null
+                        && charString.PT_FreeText.textGroup.Length > 0
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString != null
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
+                        locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
+
+                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteAttributeString("locale", locale);
+                    if (locale == "#locale-nor")
+                        writer.WriteValue(GetNorwegianValueFromFreeText(charString));
+                    else
+                        writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+            }
+            else if (this.typeField.GetType() == typeof(CharacterString_PropertyType))
+            {
+                CharacterString_PropertyType charString = this.typeField as CharacterString_PropertyType;
+                if (charString != null)
+                {
+                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                }
+            }
+            else if (this.typeField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.typeField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
+            }
+
+        }
+        public string GetEnglishValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToUpper().Equals("#ENG"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElementNorwegian(string characterString, string norwegianLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#locale-nor",
+                                     Value = norwegianLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
+        }
+        public string GetNorwegianValueFromFreeText(CharacterString_PropertyType input)
+        {
+            string value = null;
+            if (input != null)
+            {
+                PT_FreeText_PropertyType freeText = input as PT_FreeText_PropertyType;
+                if (freeText != null && freeText.PT_FreeText != null && freeText.PT_FreeText.textGroup != null)
+                {
+                    foreach (var localizedStringProperty in freeText.PT_FreeText.textGroup)
+                    {
+                        if (localizedStringProperty.LocalisedCharacterString != null
+                            && localizedStringProperty.LocalisedCharacterString.locale != null
+                            && localizedStringProperty.LocalisedCharacterString.locale.ToLower().Equals("#locale-nor"))
+                        {
+                            value = localizedStringProperty.LocalisedCharacterString.Value;
+                            break;
+                        }
+                    }
+                }
+            }
+            return value;
+        }
+
+        private PT_FreeText_PropertyType CreateFreeTextElement(string characterString, string englishLocalizedValue)
+        {
+            return new PT_FreeText_PropertyType
+            {
+                CharacterString = characterString,
+                PT_FreeText = new PT_FreeText_Type
+                {
+                    textGroup = new LocalisedCharacterString_PropertyType[] {
+                            new LocalisedCharacterString_PropertyType {
+                                LocalisedCharacterString = new LocalisedCharacterString_Type {
+                                     locale = "#ENG",
+                                     Value = englishLocalizedValue
+                                }
+                            }
+                        }
+                }
+            };
         }
     }
 
