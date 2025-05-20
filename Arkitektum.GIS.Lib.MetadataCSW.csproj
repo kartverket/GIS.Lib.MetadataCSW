@@ -17,9 +17,7 @@
 	<AssemblyVersion>2.0.0</AssemblyVersion>
     <!--Assembly info END-->
   </PropertyGroup>
-  <PropertyGroup>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	
+  <PropertyGroup>	
 	<Title>Metadata CSW</Title>
 	<Authors>Statens kartverk</Authors>
 	<PackageId>$(AssemblyName)</PackageId>
