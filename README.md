@@ -1,3 +1,7 @@
+This project is a fork of [Arkitektum/GIS.Lib.MetadataCSW](https://github.com/Arkitektum/GIS.Lib.MetadataCSW), originally licensed under BSD-2-Clause.
+The fork targets netstandard 2.0 and is compatible with .NET/.NET Core and .NET Framework 4.6.1+.
+All modifications &copy; 2025 Statens kartverk.
+
 This project contains code generated with xsd.exe for the ISO-19139 Metadata standard, together with the OGC Catalogue Service (CSW) standard.
 These two standards together makes it possible to exchange geospatial metadata with the CSW-API.
 
