@@ -28,7 +28,8 @@
 	<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Converted to netstandard2.0</PackageReleaseNotes>	  
 	<RepositoryType>git</RepositoryType>
-	<RepositoryUrl>https://github.com/pamroe/GIS.Lib.MetadataCSW.git</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/kartverket/GIS.Lib.MetadataCSW.git</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/kartverket/GIS.Lib.MetadataCSW.git</RepositoryUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
