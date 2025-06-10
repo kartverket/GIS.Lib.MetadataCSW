@@ -21,7 +21,7 @@
 	<Title>Metadata CSW</Title>
 	<Authors>Statens kartverk</Authors>
 	<PackageId>$(AssemblyName)</PackageId>
-	<PackageVersion>2.0.0</PackageVersion>
+	<PackageVersion>2.0.0-alpha1</PackageVersion>
 	<PackageDescription>Library for ISO19139/OGC/CSW metadata parsing</PackageDescription>
 	<PackageTags>GIS OpenGIS ISO19139 OGC CSW GML</PackageTags>
 	<PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
