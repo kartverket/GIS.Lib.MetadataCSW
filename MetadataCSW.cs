@@ -17438,6 +17438,37 @@ namespace www.opengis.net
         }
     }
 
+    public partial class CI_Citation_Title_Extended 
+    {
+        private Anchor_Type anchorField;
+        private PT_FreeText_PropertyType freeTextField;
+
+        public Anchor_Type anchor
+        {
+            get
+            {
+                return this.anchorField;
+            }
+            set
+            {
+                this.anchorField = value;
+            }
+        }
+
+        public PT_FreeText_PropertyType freeText
+        {
+            get
+            {
+                return this.freeTextField;
+            }
+            set
+            {
+                this.freeTextField = value;
+            }
+        }
+
+    }
+
     public partial class CI_Citation_Title : IXmlSerializable
     {
         private object itemField;
@@ -17527,8 +17558,61 @@ namespace www.opengis.net
 
         public void WriteXml(System.Xml.XmlWriter writer)
         {
+            if (this.itemField.GetType() == typeof(Anchor_Type))
+            {
+                Anchor_Type anchor = this.itemField as Anchor_Type;
+                if (anchor != null)
+                {
+                    writer.WriteStartElement("gmx:Anchor");
+                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    if (!string.IsNullOrEmpty(anchor.title))
+                        writer.WriteAttributeString("xlink:title", anchor.title);
+                    writer.WriteString(anchor.Value);
+                    writer.WriteEndElement();
+                }
+            }
 
-            if (this.itemField.GetType() == typeof(PT_FreeText_PropertyType))
+            if (this.itemField.GetType() == typeof(CI_Citation_Title_Extended))
+            {
+                CI_Citation_Title_Extended cI_Citation_Title_Extended = this.itemField as CI_Citation_Title_Extended;
+                PT_FreeText_PropertyType charString = cI_Citation_Title_Extended.freeText as PT_FreeText_PropertyType;
+                if (charString != null)
+                {
+                    string locale = "#ENG";
+
+                    if (charString.PT_FreeText != null && charString.PT_FreeText.textGroup != null
+                        && charString.PT_FreeText.textGroup.Length > 0
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString != null
+                        && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
+                        locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
+
+                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+
+                    Anchor_Type anchor = cI_Citation_Title_Extended.anchor as Anchor_Type;
+                    if (anchor != null)
+                    {
+                        writer.WriteStartElement("gmx:Anchor");
+                        writer.WriteAttributeString("xlink:href", anchor.href);
+                        if (!string.IsNullOrEmpty(anchor.title))
+                            writer.WriteAttributeString("xlink:title", anchor.title);
+                        writer.WriteString(anchor.Value);
+                        writer.WriteEndElement();
+                    }
+
+                    writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
+                    writer.WriteAttributeString("locale", locale);
+                    if (locale == "#locale-nor")
+                        writer.WriteValue(GetNorwegianValueFromFreeText(charString));
+                    else
+                        writer.WriteValue(GetEnglishValueFromFreeText(charString));
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                    writer.WriteEndElement();
+                }
+            }
+            else if (this.itemField.GetType() == typeof(PT_FreeText_PropertyType))
             {
                 PT_FreeText_PropertyType charString = this.itemField as PT_FreeText_PropertyType;
                 if (charString != null)
@@ -17562,19 +17646,6 @@ namespace www.opengis.net
                 if (charString != null)
                 {
                     writer.WriteElementString("gco:CharacterString", charString.CharacterString);
-                }
-            }
-            else if (this.itemField.GetType() == typeof(Anchor_Type))
-            {
-                Anchor_Type anchor = this.itemField as Anchor_Type;
-                if (anchor != null)
-                {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", anchor.href);
-                    if(!string.IsNullOrEmpty(anchor.title))
-                        writer.WriteAttributeString("xlink:title", anchor.title);
-                    writer.WriteString(anchor.Value);
-                    writer.WriteEndElement();
                 }
             }
 
