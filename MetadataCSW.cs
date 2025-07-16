@@ -20821,18 +20821,7 @@ namespace www.opengis.net
 
             XmlElement node = doc.DocumentElement as XmlElement;
 
-            if (anchor != null)
-            {
-                string keyWordString = anchor.InnerText;
-                string keyWordLink = "";
-                var keyWordsLinkNode = anchor.SelectSingleNode("//gmd:keyword/gmx:Anchor/@xlink:href", ns);
-                if (keyWordsLinkNode != null)
-                    keyWordLink = keyWordsLinkNode.InnerText;
-
-                keyword = new Anchor_Type { Value = keyWordString, href = keyWordLink };
-            }
-
-            else if ((node != null) && node.HasAttribute("xsi:type")
+            if ((node != null) && node.HasAttribute("xsi:type")
                 && node.Attributes["xsi:type"].Value == "gmd:PT_FreeText_PropertyType")
             {
                 string keywordString = "";
@@ -20855,9 +20844,32 @@ namespace www.opengis.net
 
                 if (!string.IsNullOrEmpty(keywordNorwegian))
                     keyword = CreateFreeTextElementNorwegian(keywordString, keywordNorwegian);
-                else
+                else if (keywordNode == null && anchor != null)
+                {
+                    string keyWordString = anchor.InnerText;
+                    string keyWordLink = "";
+                    var keyWordsLinkNode = anchor.SelectSingleNode("//gmd:keyword/gmx:Anchor/@xlink:href", ns);
+                    if (keyWordsLinkNode != null)
+                        keyWordLink = keyWordsLinkNode.InnerText;
 
+                    var anchorType = new Anchor_Type { Value = keyWordString, href = keyWordLink };
+
+                    MD_Keyword_Extended extended = new MD_Keyword_Extended
+                    { anchor = anchorType, freeText = CreateFreeTextElement(keywordString, keywordEnglish) };
+                    keyword = extended;
+                }
+                else
                     keyword = CreateFreeTextElement(keywordString, keywordEnglish);
+            }
+            else if (anchor != null)
+            {
+                string keyWordString = anchor.InnerText;
+                string keyWordLink = "";
+                var keyWordsLinkNode = anchor.SelectSingleNode("//gmd:keyword/gmx:Anchor/@xlink:href", ns);
+                if (keyWordsLinkNode != null)
+                    keyWordLink = keyWordsLinkNode.InnerText;
+
+                keyword = new Anchor_Type { Value = keyWordString, href = keyWordLink };
             }
             else
             {
