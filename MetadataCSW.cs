@@ -11556,7 +11556,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.item as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else if (this.item.GetType() == typeof(LanguageCode_PropertyType))
@@ -11564,7 +11564,7 @@ namespace www.opengis.net
                 LanguageCode_PropertyType item = this.item as LanguageCode_PropertyType;
                 if (item != null)
                 {
-                    writer.WriteStartElement("gmd:LanguageCode");
+                    writer.WriteStartElement("gmd", "LanguageCode", "http://www.isotc211.org/2005/gmd");
                     writer.WriteAttributeString("codeList", item.LanguageCode.codeList);
                     writer.WriteAttributeString("codeListValue", item.LanguageCode.codeListValue);
                     writer.WriteString(item.LanguageCode.Value);
@@ -12912,8 +12912,8 @@ namespace www.opengis.net
                             && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                             locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                        writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
-                        writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                        writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
+                        writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                         writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                         writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                         writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
@@ -12932,7 +12932,7 @@ namespace www.opengis.net
                     CharacterString_PropertyType charString = this.descriptionField as CharacterString_PropertyType;
                     if (charString != null)
                     {
-                        writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                        writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                     }
                 }
                 else if (this.descriptionField.GetType() == typeof(Anchor_Type))
@@ -12940,8 +12940,8 @@ namespace www.opengis.net
                     Anchor_Type anchor = this.descriptionField as Anchor_Type;
                     if (anchor != null)
                     {
-                        writer.WriteStartElement("gmx:Anchor");
-                        writer.WriteAttributeString("xlink:href", anchor.href);
+                        writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                        writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                         writer.WriteString(anchor.Value);
                         writer.WriteEndElement();
                     }
@@ -17587,10 +17587,10 @@ namespace www.opengis.net
                 Anchor_Type anchor = this.itemField as Anchor_Type;
                 if (anchor != null)
                 {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                    writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                     if (!string.IsNullOrEmpty(anchor.title))
-                        writer.WriteAttributeString("xlink:title", anchor.title);
+                        writer.WriteAttributeString("xlink", "title", "http://www.w3.org/1999/xlink", anchor.title);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
@@ -17610,15 +17610,15 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
 
                     Anchor_Type anchor = cI_Citation_Title_Extended.anchor as Anchor_Type;
                     if (anchor != null)
                     {
-                        writer.WriteStartElement("gmx:Anchor");
-                        writer.WriteAttributeString("xlink:href", anchor.href);
+                        writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                        writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                         if (!string.IsNullOrEmpty(anchor.title))
-                            writer.WriteAttributeString("xlink:title", anchor.title);
+                            writer.WriteAttributeString("xlink", "title", "http://www.w3.org/1999/xlink", anchor.title);
                         writer.WriteString(anchor.Value);
                         writer.WriteEndElement();
                     }
@@ -17649,8 +17649,8 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                     writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
@@ -17669,7 +17669,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.itemField as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
 
@@ -18065,7 +18065,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.anchorField as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else if (this.anchorField.GetType() == typeof(Anchor_Type))
@@ -18073,8 +18073,8 @@ namespace www.opengis.net
                 Anchor_Type anchor = this.anchorField as Anchor_Type;
                 if (anchor != null)
                 {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                    writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
@@ -19912,12 +19912,12 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.item as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco","CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else
             {
-                writer.WriteAttributeString("gco:nilReason", "inapplicable");
+                writer.WriteAttributeString("gco", "nilReason", "http://www.isotc211.org/2005/gco", "inapplicable");
             }
         }
 
@@ -20898,15 +20898,15 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
 
                     Anchor_Type anchor = mD_Keyword_Extended.anchor as Anchor_Type;
                     if (anchor != null)
                     {
-                        writer.WriteStartElement("gmx:Anchor");
-                        writer.WriteAttributeString("xlink:href", anchor.href);
+                        writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                        writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                         if (!string.IsNullOrEmpty(anchor.title))
-                            writer.WriteAttributeString("xlink:title", anchor.title);
+                            writer.WriteAttributeString("xlink", "title", "http://www.w3.org/1999/xlink", anchor.title);
                         writer.WriteString(anchor.Value);
                         writer.WriteEndElement();
                     }
@@ -20938,8 +20938,8 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                     writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
@@ -20958,7 +20958,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.keywordField as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else if (this.keywordField.GetType() == typeof(Anchor_Type))
@@ -20966,8 +20966,8 @@ namespace www.opengis.net
                 Anchor_Type anchor = this.keywordField as Anchor_Type;
                 if (anchor != null)
                 {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                    writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
@@ -23482,8 +23482,8 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                     writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
@@ -23502,7 +23502,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.typeField as CharacterString_PropertyType;
                 if (charString != null)
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else if (this.typeField.GetType() == typeof(Anchor_Type))
@@ -23510,8 +23510,8 @@ namespace www.opengis.net
                 Anchor_Type anchor = this.typeField as Anchor_Type;
                 if (anchor != null)
                 {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", anchor.href);
+                    writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                    writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", anchor.href);
                     writer.WriteString(anchor.Value);
                     writer.WriteEndElement();
                 }
@@ -50893,7 +50893,7 @@ namespace www.opengis.net
                     otherConstraintsEnglish = otherConstraintsEnglishNode.InnerText;
 
                 var otherConstraintsNorwegianNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#locale-nor']", nsmgr);
-
+                
                 if (otherConstraintsNorwegianNode == null)
                     otherConstraintsNorwegianNode = doc.SelectSingleNode("//gmd:otherConstraints/gmd:PT_FreeText/gmd:textGroup/gmd:LocalisedCharacterString[@locale='#NO']", nsmgr);
 
@@ -50941,8 +50941,8 @@ namespace www.opengis.net
                         && charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale != null)
                         locale = charString.PT_FreeText.textGroup[0].LocalisedCharacterString.locale;
 
-                    writer.WriteAttributeString("xsi:type", "gmd:PT_FreeText_PropertyType");
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteAttributeString("xsi", "type", "http://www.w3.org/2001/XMLSchema-instance", "gmd:PT_FreeText_PropertyType");
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                     writer.WriteStartElement("PT_FreeText", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("textGroup", "http://www.isotc211.org/2005/gmd");
                     writer.WriteStartElement("LocalisedCharacterString", "http://www.isotc211.org/2005/gmd");
@@ -50961,7 +50961,7 @@ namespace www.opengis.net
                 CharacterString_PropertyType charString = this.mD_RestrictionOtherField as CharacterString_PropertyType;
                 if (charString != null && !string.IsNullOrEmpty(charString.CharacterString))
                 {
-                    writer.WriteElementString("gco:CharacterString", charString.CharacterString);
+                    writer.WriteElementString("gco", "CharacterString", "http://www.isotc211.org/2005/gco", charString.CharacterString);
                 }
             }
             else if (this.mD_RestrictionOtherField.GetType() == typeof(Anchor_Type))
@@ -50969,8 +50969,8 @@ namespace www.opengis.net
                 Anchor_Type otherAnchor = this.mD_RestrictionOtherField as Anchor_Type;
                 if (otherAnchor != null)
                 {
-                    writer.WriteStartElement("gmx:Anchor");
-                    writer.WriteAttributeString("xlink:href", otherAnchor.href);
+                    writer.WriteStartElement("gmx", "Anchor", "http://www.isotc211.org/2005/gmx");
+                    writer.WriteAttributeString("xlink", "href", "http://www.w3.org/1999/xlink", otherAnchor.href);
                     writer.WriteString(otherAnchor.Value);
                     writer.WriteEndElement();
                 }
